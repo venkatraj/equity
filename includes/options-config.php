@@ -149,7 +149,7 @@ add_action('admin_menu','equity_theme_page');
 
 
 function equity_display_upgrade() {
-  $theme_data = wp_get_theme('Equity');  
+  $theme_data = wp_get_theme('equity');  
     // Check for current viewing tab
     $tab = null;
     if ( isset( $_GET['tab'] ) ) {

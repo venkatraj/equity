@@ -60,8 +60,8 @@ Equity WordPress Theme bundles the following third-party resources:
 * {Flexslider} © 2015 Woo Themes, GPLv2 ,https://github.com/woothemes/FlexSlider
 * {FontAwesome Icon Picker} © Licensed under the MIT License, https://github.com/mjolnic/fontawesome-iconpicker/blob/master/LICENSE
 * {FontAwesome} © Dave Gandy, SIL OFL 1.1 and MIT ,https://fortawesome.github.io/Font-Awesome
-* Screenshot Images is licensed under CC0 Public Domain License. (http://pixabay.com/en/service/terms/)
-	* image © 2015 Pixabay, CC0 1.0 ,https://pixabay.com/en/abdominal-exercise-fitness-gym-1203880/
-	* image © 2015 Pixabay, CC0 1.0 ,https://www.flickr.com/photos/matthewphotography/14126653768/
+* Screenshot Images is licensed under CC0 Public Domain License.
+	* image © 2015 flickr, CC0 1.0 ,https://www.flickr.com/photos/olympialawpc/32724082744/
+	* image © 2015 flickr, CC0 1.0 ,https://www.flickr.com/photos/68577561@N07/9550484326/
 * All Images inside the images folder are created by own. Those Image are licensed under CC0 Public Domain License GPLv3.
 

@@ -13,7 +13,7 @@ var sort = require('gulp-sort'); // Recommended to prevent unnecessary changes i
  
            
 /* Translate .pot file */ 
-gulp.task( 'translate', function () {
+gulp.task( 'translate', function () {   
      return gulp.src( './**/*.php')
        .pipe(sort())
        .pipe(wpPot( {
