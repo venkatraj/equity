@@ -1,0 +1,31 @@
+
+/* Breadcrumb */
+.breadcrumb {
+  background: $primary;
+  position: relative;
+  padding: 30px 0px;
+  margin-top: 0;
+  text-align: center;
+  a {
+    color: $secondary;
+    &:hover {
+      color: $c1;
+    }
+  }
+  .breadcrumb-left {
+      h2 {
+        margin-bottom:0;
+        color: $white;
+        line-height: 3.5rem;
+      }
+  }
+
+  .breadcrumb-right {
+     color: $white;
+     //float: right;
+     margin-top: 8px;
+      #crumbs{
+        
+      }
+  }
+}

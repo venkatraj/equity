@@ -1,0 +1,196 @@
+.top-nav {
+	//background: $primary;
+	margin-bottom: 0px;
+	@include font-size(1.4);
+	color: $c3;
+	font-weight: 700;
+
+	aside { 
+		margin-bottom: 10px;
+	}
+	.textwidget {
+		padding:0;
+	}
+	.widget_text {
+		margin:0px;    
+	}
+	a {
+		color: $c3;  
+		&:hover {
+			color: $primary;
+		}
+	}
+	
+	ul {   
+		margin:0;
+
+		li {
+			float: left;
+			list-style: none;
+			border-bottom: none !important;
+			margin-right: 15px;
+			
+			&:nth-of-type(1) {
+				padding-left:0;
+			}
+			a {
+				padding: 0px 2px 0px 2px;
+				border-radius: 5px;
+				display: inline-block;
+				&:hover {
+					color: $primary;
+				}
+			}
+			i {
+				@include font-size(1.2);	
+				display: inline-block; 
+				padding-right: 2px;
+				line-height: 0.5rem;
+			}
+		}
+	}
+
+	.cart-left {
+		ul,ol {
+			padding-left:0!important;
+		}
+	}  
+
+	.cart-right li {     
+		float: right;
+		margin-right: 2px; 
+	    &:nth-of-type(1) {
+            margin-right:0;
+            padding-right:0;
+            padding-left: 5px; 
+		} 
+		a {
+          border: 1px solid $white;
+		  border-radius: 100%;
+		  line-height:2.1rem;
+		  min-width: 25px;
+		  min-height: 25px;
+		  text-align: center;
+		  
+		} 
+		i {
+			padding-right:0;
+		}
+	}
+
+    .cart-right {
+      position: relative;   
+    }
+
+	/* top header search box */
+
+	.widget_search {  
+		.widget-title {
+			color: $c3;
+		    font-size: 15px;
+		    padding: 4px 30px 3px 10px;
+		    text-align: right;
+		    margin-bottom:0;
+		    display: block;
+		}
+		.search-form {
+			position: absolute;
+			right: 0px;
+			top: 0px; 
+			z-index:3;
+			//overflow: hidden;
+
+            i {
+            	position: absolute;
+            	right:0;
+            	padding: 8px;
+            	display: block;
+            }
+			.search-field {
+				background-color: transparent;
+				background-position: calc(100% - 15px) center;
+				background-repeat: no-repeat;
+				background-size: 24px 24px;
+				cursor: pointer;
+				//height: 45px;
+				margin: 0;
+				padding: 4px 50px 5px 10px; 
+				line-height: 2rem;
+				position: relative;  
+				width: 0;
+				z-index:2;
+				border: none;
+				width: 0px;
+				@include font-size(1.2);
+				//background-image: url(http://api.ning.com:80/files/dr2jDpSXWFhyuoGJ4YR5Fu-PwuqLz70YxRaUcpdKNxf2HI5ECzddyx3NHuPz-MB4ujGS4rEtdtS-aQoFlQrtv*XwVOu*AvC8/searchearchicon.png);
+
+			}
+
+			.search-field:focus {  
+				background-color: $white;
+				background-size: 15px 16px;
+				border: 12px solid $c3; 
+				outline: 2px solid green; 
+				border-radius: 5px;
+				cursor: text;
+				outline: 0;
+				width: 230px;
+				top: 0;
+				margin-top: 35px;
+				color: $white;
+				-webkit-transition: width 400ms ease, background 400ms ease;
+				transition:         width 400ms ease, background 400ms ease;
+
+			}
+			.search-field:focus ~ .search-submit-wrapper {
+				&:before {
+				  opacity: 1;
+				}
+				.search-submit {
+					opacity: 1!important;
+				}
+	        }
+            .search-submit-wrapper {
+                position: absolute;
+                top: 46px;
+                z-index:11;
+			    right: 12px;
+			    &:before {
+		    	    background: $primary;
+				    content: "";
+				    height: 8px;
+				    left: -3px;
+				    position: absolute;
+				    top: calc(50% - 3px);
+				    transform: rotate(45deg);
+				    width: 8px;
+				    z-index: 1000;
+				    opacity:0;
+				}
+				.search-submit {
+				    background-color: $primary;
+					background-image: none;
+				    border-radius: 3px 0 0 3px;
+				    font-size: 12px;
+				    line-height: 2rem;
+				    padding: 0 10px;
+				    height: 30px;
+				    text-indent: 0;
+				    text-transform: unset;
+					box-shadow: none;
+					z-index:10;
+					opacity:0;
+			        position: static;
+					&:hover {
+						background-color: none;
+					}
+				}  
+			}
+
+			input[type="search"] {
+			  -webkit-appearance: textfield;
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,335 @@
+.hentry.sticky {
+	color: $white;
+	padding: 25px !important;
+	padding-bottom: 20!important;
+	@include border-radius(5px);
+	position: relative;
+	margin-bottom: 90px !important;
+	background-color: $primary;
+
+	&:after {
+		position: absolute;         
+		content:"";
+		left:0; 
+		bottom: -70px;    
+		height:3px;
+		width: 100%;
+		border-bottom: 1px solid $c1;  
+	}  
+
+	.entry-meta .date-structure {
+		&:hover {
+		  .dd {
+		  	color: $secondary;
+		  }
+		}
+		.dd {
+			color: $white;
+		}
+	}
+	
+	h3.entry-title { 
+		a {
+	 		color: $white;
+	 		&:hover {
+	 			color: $secondary;    
+	 		}  	
+	 	} 
+	 }
+
+	 .entry-content {
+	    color: $white!important;
+	 	ul {
+	 		li{
+	 			list-style:square;
+	 		}
+	 	}
+	 	p {
+	 		color: $white!important;
+	 	}
+	 }
+
+	 a {
+	 	color: $white;
+	 	&:hover {
+	 		color: $secondary;
+	 	}
+	}
+
+	span i {
+		color: $white;
+	}
+
+	code {
+	 	color: $black;
+	 }
+
+	 .entry-footer {
+	 	span {
+	 		background-color:$primary;
+	 		color:$white;
+	 		i,a {
+	 			color:$white;
+	 		}
+	 	}
+	 }
+
+	.entry-footer,
+	.entry-meta {
+		margin-bottom: 0;
+	 	border: 0;
+	 	a {
+	 		color: $white;
+	 		&:hover {
+	 			color: $white;
+	 		}
+	 	}
+	 }
+ 
+	.entry-meta {
+		a:hover {
+ 			color: $secondary!important;
+ 		}
+	 }
+
+}
+
+.hentry.post {
+	margin: 0 0 1em;
+	border-bottom: 1px solid $c1;
+	h1 a {
+		color: $black;
+		&:hover {
+			color: $primary;
+		}
+	}
+}
+
+.byline,
+.updated:not(.published){}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+
+
+.sticky {
+	.entry-meta,
+	.entry-footer {
+		background : none;
+		padding: 0;
+	}
+}
+
+.entry-meta .date-structure {
+	display: inline-block;
+	text-align: center;
+	.dd {
+		color: $primary;
+	}
+	&:hover { 
+	  .dd {
+	  	color: $secondary;
+	  }
+	}
+}
+
+.entry-meta,.entry-footer {
+	margin: 5px 0px 25px 0px;
+	position: relative;
+	 
+}
+
+
+.entry-meta {
+	
+	span {
+		margin: 0 35px 0 0;
+		
+
+		span {
+			margin: 0;
+		}
+
+		i {
+			color: $primary;
+			padding-right: 5px;
+		}
+
+		a {
+			color: $primary;
+			&:hover {
+				color: $secondary;
+			}
+		}
+		&:hover {
+			i {
+				color: $secondary;			
+			}	
+		}
+	}
+	.cat-links {
+		a:hover {
+	        color: $secondary!important;
+		}
+	}
+
+}
+.entry-footer {
+	
+	span {
+		margin: 0 30px 0 0px;
+		span {
+			margin: 0;
+		}
+
+		i {
+			color: $primary;
+			padding-right: 5px;
+		}
+
+		a {
+			
+			color:$primary;
+			padding: 5px 10px 5px 3px;
+			border-radius: 3px;
+			&:hover { 
+				color: $secondary;			
+			}
+		}
+
+	}
+}
+
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	margin: 0 0 1.5em;
+	padding: 12px;
+	text-align: center;
+	color: $white;
+	background-color: $primary;
+	display: inline-block;
+	a {
+		padding: 5px 10px;   
+		color: $secondary;
+		&:hover {
+			color: $c1;
+		}
+	}
+}
+
+blockquote {
+	position: relative;
+	margin: 0;
+	display: inline-block;
+	//margin-bottom: 20px;
+	//margin-top: 30px;
+	margin:0;  
+	@include font-size(2);
+	//font-family: $heading_font;
+	padding: 0 10px 0 40px;
+	border-radius: 3px;
+
+	&:before {
+		position: absolute;
+		content: "\f10d";
+		@include font-size(2.2);
+		font-family: 'FontAwesome';
+		left: 20px;
+		top: 20px;
+		color: $c3;	
+	}	
+
+	p {
+		margin-bottom: 0;
+		@include font-size(2);
+		padding: 20px;
+		color: $c3;
+		position: relative;
+	
+		cite {
+			font-style: normal;
+			text-transform: uppercase;
+			color: $white;
+		}
+		a, a:visited {
+			color: $white;
+			@include font-size(1.4);
+		}
+
+		a:hover {
+			color: $c3;
+		}
+	}
+}
+
+.related-posts { 
+	padding: 20px 0px;
+	ul#equity-related-posts {
+		list-style-type: none;
+		margin: 0;
+		li {
+			width: 18%;
+			float: left;
+			margin: 1%;
+			line-height: normal;
+			a {
+				line-height: normal;
+			}
+		}
+	}
+}  
+  
+.post  {
+    position:relative;
+	.latest-content {
+		
+		.entry-title {   
+			margin-bottom: 8px;
+            margin-top: 5px;
+			a {
+				color: $secondary;
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+
+		h1,h2,h3,h4,h5,h6,h1.entry-title {
+          //line-height: 1.3;
+		}
+
+		.entry-meta {
+			span {
+				@include font-size(1.6);	
+			}
+		}
+		.entry-content {
+		    color: $secondary;
+			p {
+				color:$secondary;
+			}
+		}  
+		
+		a.more-link {  	
+			border-radius:2px;
+			padding: 0;
+			background:transparent;
+			color: $primary;
+			&:hover {
+				color:$secondary;
+			}
+			.fa {
+				display: none;
+			}
+		}
+	}
+}

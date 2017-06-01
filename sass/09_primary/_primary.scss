@@ -1,0 +1,40 @@
+.site-content {
+	padding-top: 80px;
+	margin-bottom: 100px;
+}
+
+
+.site-main {
+	margin: 1.5em 0;
+	article.post {
+		padding: 20px 0;
+	}
+}
+
+.single {
+	.site-main article.post {
+		padding-top: 0;
+		border-bottom: none;
+	} 
+	.navigation.post-navigation {
+         padding-top: 25px;
+         border-top: 1px solid $c1;
+	}
+
+}
+
+@import "asides";
+
+@import "social";
+
+@import "comments"; 
+
+@import "posts-and-pages";
+
+@import "front-page";
+
+@import "frontpage_flex_slider";
+
+@import "woocommerce";
+
+

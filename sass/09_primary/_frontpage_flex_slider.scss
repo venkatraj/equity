@@ -1,0 +1,174 @@
+.flexslider {
+  border: 0 !important;   
+  margin-bottom: 0; 
+  @include box-shadow(inset,0,0,0,transparent !important);
+  @include border-radius(0px !important);
+  background: transparent !important;
+  
+  .slides > li {
+    @include position(relative);
+  } 
+
+  .flex-direction-nav {
+    li {
+      border: 0 !important;
+      padding: 0;
+    }
+   
+    a {
+      margin: 0;
+      text-align: center;
+      top: auto;
+      bottom: 8%;    
+      opacity:1!important;
+      overflow: visible;    
+      @include size(40px, 40px);
+      @include font-size(0);
+      line-height: 40px;
+      background: $secondary; 
+      border-radius: 100%;
+      &:before {
+        @include font-size(1.8);
+        color: $white;
+        font-family: "FontAwesome";
+      }
+      &:hover {   
+        background-color: $primary;
+        &:before {
+          color: $white;
+        }       
+      }     
+    }
+
+    a.flex-prev {
+      left:auto;
+      right: calc(4% + 50px);
+      opacity:0;
+      &:before {
+        content:"\f104";
+      } 
+      &:after {
+        left: 5px;
+      }    
+    }
+
+    a.flex-next {
+      text-align: center;
+      right:4%;
+      opacity:0;
+       &:before {
+        content:"\f105";
+      } 
+      &:after {
+        right: 5px;
+      } 
+    }
+
+
+  }   
+
+  &:hover {
+    .flex-direction-nav {
+
+      a.flex-prev {
+        left:auto;
+        right: calc(4% + 50px);
+        background-color: $secondary;
+        opacity:1;
+        &:hover {
+           background-color: $primary;
+        }
+      }
+
+      a.flex-next {
+        right:4%;
+        background-color: $secondary;
+        opacity:1;
+         &:hover {
+           background-color: $primary;
+        }
+      }
+    }
+  }
+
+
+  ol.flex-control-paging {
+    text-align: center;   
+    bottom: 15px;
+    z-index: 10;
+    li {
+      float: none;
+      display: inline;
+      padding:0px;
+      margin:0;  
+      a {
+        display: inline-block;
+        @include border-radius(25px !important);
+        background-color: $secondary;
+        text-indent: -9999em !important;
+        margin: 0 5px;
+        box-shadow:none;
+        width: 12px;
+        height: 12px;
+      }   
+
+      a.flex-active,a:hover {
+        border-radius: 25px;
+        background-color:$primary;
+
+      }  
+
+    }
+  }
+
+  
+}
+
+
+.flexslider {
+  .flex-caption {
+      position: absolute;  
+      top: 20%;
+      left: 5%;
+      width: 50%;
+      padding: 20px 20px 20px 0px;
+      z-index:100; 
+      color: $secondary; 
+     //background-color: rgba($secondary,0.4);  
+      margin:0 auto;
+        h1,h2,h3,h4,h5,h6 {
+          position: relative;  
+          line-height: 1.2;
+          margin-bottom: 20px;
+        } 
+
+        p {
+          @include font-size(1.6);
+          margin-bottom: 30px;
+        }
+
+      a,p a {    
+          color: $white;
+          padding: 10px 35px; 
+          margin: 10px 10px 10px 0px;
+          display: inline-block;
+          border-radius: 3px;
+          background-color: $primary;
+          @include font-size(1.8);
+          font-weight: 700;
+          &:hover {
+             background-color: $secondary; 
+          }
+      }
+      
+      .portfolio-readmore {
+         margin-bottom: 10px;
+         .fa {
+            display: none;
+         }
+      }
+  }
+  .flex-image {
+   position: relative;  
+  }
+}
