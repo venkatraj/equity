@@ -178,32 +178,32 @@ function equity_setup() {
 			),
 			'lawyer-one' => array(
 	            'post_type' => 'post',
-	            'post_title' => _x( 'Post One', 'equity'),
-	            'post_content' => _x( '<h2>Dedicated of Excellence</h2> Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.<p class="portfolio-readmore"><a class="btn btn-mini more-link" href="#">Read More</a></p>', 'equity'),
+	            'post_title' => __( 'Post One', 'equity'),
+	            'post_content' => __( '<h2>Dedicated of Excellence</h2> Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.<p class="portfolio-readmore"><a class="btn btn-mini more-link" href="#">Read More</a></p>', 'equity'),
 	            'thumbnail' => '{{post-featured-image}}',
 	        ),
 	        'lawyer-two' => array(
 	            'post_type' => 'post',
-	            'post_title' => _x( 'Post Two', 'equity'),
-	            'post_content' => _x( '<h2>We are Voice of Justice</h2> Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.<p class="portfolio-readmore"><a class="btn btn-mini more-link" href="#">Read More</a></p>', 'equity'),
+	            'post_title' => __( 'Post Two', 'equity'),
+	            'post_content' => __( '<h2>We are Voice of Justice</h2> Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.<p class="portfolio-readmore"><a class="btn btn-mini more-link" href="#">Read More</a></p>', 'equity'),
 	            'thumbnail' => '{{post-featured-image}}',
 	        ), 
 			'service-one' => array(  
 				'post_type' => 'page',
-				'post_title' => _x( 'Service 1', 'equity'),
-	            'post_content' => _x( 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur', 'equity'),
+				'post_title' => __( 'Service 1', 'equity'),
+	            'post_content' => __( 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur', 'equity'),
 				'thumbnail' => '{{page-images}}',
 			),
 			'service-two' => array(
 				'post_type' => 'page',
-				'post_title' => _x( 'Service 2', 'equity'),
-	            'post_content' => _x( 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur', 'equity'),
+				'post_title' => __( 'Service 2', 'equity'),
+	            'post_content' => __( 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur', 'equity'),
 				'thumbnail' => '{{page-images}}',
 			),
 			'service-three' => array(
 				'post_type' => 'page',
-				'post_title' => _x( 'Service 3', 'equity'),
-	            'post_content' => _x( 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur', 'equity'),
+				'post_title' => __( 'Service 3', 'equity'),
+	            'post_content' => __( 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur', 'equity'),
 				'thumbnail' => '{{page-images}}',
 			),
 			
@@ -212,11 +212,11 @@ function equity_setup() {
 		// Create the custom image attachments used as post thumbnails for pages.
 		'attachments' => array(
 			'post-featured-image' => array( 
-				'post_title' => _x( 'slider one', 'Theme starter content', 'equity' ),
+				'post_title' => __( 'slider one', 'equity' ),
 				'file' => 'images/slider.png', // URL relative to the template directory.
 			),
 			'page-images' => array(
-				'post_title' => _x( 'Page Images', 'Theme starter content', 'equity' ),
+				'post_title' => __( 'Page Images', 'equity' ),
 				'file' => 'images/page.png', // URL relative to the template directory.
 			),
 		),

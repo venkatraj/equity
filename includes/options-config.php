@@ -171,7 +171,7 @@ function equity_display_upgrade() {
         <p class="upgrade-btn"><a class="upgrade" href="<?php echo esc_url($pro_theme_url); ?>" target="_blank"><?php printf( __( 'Buy %1s Pro - $39', 'equity'), $theme_data->Name ); ?></a></p>
 
 	   <h2 class="nav-tab-wrapper">
-	        <a href="?page=equity_upgrade" class="nav-tab<?php echo is_null($tab) ? ' nav-tab-active' : null; ?>"><?php esc_html_e( $theme_data->Name, 'equity' ) ?></a>
+	        <a href="?page=equity_upgrade" class="nav-tab<?php echo is_null($tab) ? ' nav-tab-active' : null; ?>"><?php echo $theme_data->Name; ?></a>
 	        <a href="?page=equity_upgrade&tab=pro_features" class="nav-tab<?php echo $tab == 'pro_features' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'PRO Features', 'equity' );  ?></a>
             <a href="?page=equity_upgrade&tab=free_vs_pro" class="nav-tab<?php echo $tab == 'free_vs_pro' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'Free VS PRO', 'equity' ); ?></a>
 	        <?php do_action( 'equity_admin_more_tabs' ); ?>
@@ -230,8 +230,8 @@ function equity_display_upgrade() {
 		                <thead>
 			                <tr>
 			                    <th></th>
-			                    <th><?php esc_html_e($theme_data->Name, 'equity'); ?> Lite</th>
-			                    <th><?php esc_html_e($theme_data->Name, 'equity'); ?> PRO</th>
+			                    <th><?php echo $theme_data->Name; ?> Lite</th>
+			                    <th><?php echo $theme_data->Name; ?> PRO</th>
 			                </tr>
 		                </thead>
 		                <tbody>
@@ -241,77 +241,77 @@ function equity_display_upgrade() {
 		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                    <tr>
-		                        <td><h3><?php _e('Support'); ?></h3></td>
+		                        <td><h3><?php _e('Support', 'equity'); ?></h3></td>
 		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                    <tr>
-		                        <td><h3><?php _e('Responsive Design'); ?></h3></td>
+		                        <td><h3><?php _e('Responsive Design', 'equity'); ?></h3></td>
 		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                    <tr>
-		                        <td><h3><?php _e('Custom Logo Option'); ?></h3></td>
+		                        <td><h3><?php _e('Custom Logo Option', 'equity'); ?></h3></td>
 		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                    <tr>
-		                         <td><h3><?php _e('Social Links'); ?></h3></td>
+		                         <td><h3><?php _e('Social Links', 'equity'); ?></h3></td>
 		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                    <tr>
-		                    	 <td><h3><?php _e('Unlimited color option'); ?></h3></td>
+		                    	 <td><h3><?php _e('Unlimited color option', 'equity'); ?></h3></td>
 		                    	 <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
 		                    	 <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                    <tr>
-		                    	 <td><h3><?php _e('Elastic Slider'); ?></h3></td>
+		                    	 <td><h3><?php _e('Elastic Slider', 'equity'); ?></h3></td>
 		                    	 <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
 		                    	 <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                     <tr>
-		                    	 <td><h3><?php _e('Page Builder Support');?></h3></td>
+		                    	 <td><h3><?php _e('Page Builder Support', 'equity');?></h3></td>
 		                    	 <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
 		                    	 <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                     <tr>
-		                    	 <td><h3><?php _e('Page Templates');?></h3></td>
+		                    	 <td><h3><?php _e('Page Templates', 'equity');?></h3></td>
 		                    	 <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
 		                    	 <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                    <tr>
-		                    	<td><h3><?php _e('Google Map');?></h3></td>
+		                    	<td><h3><?php _e('Google Map', 'equity');?></h3></td>
 		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
 		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                    <tr>
-		                    	<td><h3><?php _e('Demo Content');?></h3></td>
+		                    	<td><h3><?php _e('Demo Content', 'equity');?></h3></td>
 		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
 		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                     <tr>
-		                    	<td><h3><?php _e('Polylang Compatible');?></h3></td>
+		                    	<td><h3><?php _e('Polylang Compatible', 'equity');?></h3></td>
 		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
 		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                     <tr>
-		                    	<td><h3><?php _e('Multiple Portfolio Layouts');?></h3></td>
+		                    	<td><h3><?php _e('Multiple Portfolio Layouts', 'equity');?></h3></td>
 		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
 		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                     <tr>
-		                    	<td><h3><?php _e('Multiple Blog Layouts');?></h3></td>
+		                    	<td><h3><?php _e('Multiple Blog Layouts', 'equity');?></h3></td>
 		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
 		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                     <tr>
-		                    	<td><h3><?php _e('Page Animation');?></h3></td>
+		                    	<td><h3><?php _e('Page Animation', 'equity');?></h3></td>
 		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
 		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                     <tr>
-		                    	<td><h3><?php _e('Unlimited Sidebar ');?></h3></td>
+		                    	<td><h3><?php _e('Unlimited Sidebar', 'equity');?></h3></td>
 		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
 		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
