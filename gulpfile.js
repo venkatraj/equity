@@ -62,7 +62,7 @@ gulp.task('clean', function() {
 
 // Default task
 gulp.task('default',['clean'] , function() {
-  gulp.start('styles', 'images');
+  gulp.start('styles', 'images', 'translate');
 });   
 
 

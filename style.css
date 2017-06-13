@@ -4,7 +4,7 @@ Theme URI: http://www.webulousthemes.com/equity/
 Author: N. Venkat Raj
 Author URI: http://www.webulousthemes.com/                         
 Description: Equity Theme is a professional, sophisticated, elegant and robustly built WordPress theme for lawyers, Law Firm and Attorney website. The theme is very versatile and can also be easily used by various types of corporations, business and any kind of sites. core feature of WordPress  Has 4 Footer Widget Areas and lot more of customizer options.
-Version: 1.0.0            
+Version: 1.0.1           
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: equity  
@@ -14,7 +14,7 @@ Equity WordPress Theme, Copyright (C) 2017, N. Venkat Raj
 Equity is distributed under the terms of the GNU GPL
      
 Equity is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
-
+ 
 Resetting and rebuilding styles have been helped along thanks to the fine work of
 Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
 along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
@@ -1413,7 +1413,9 @@ object {
     .top-nav .cart-right li i {
       padding-right: 0; }
   .top-nav .cart-right {
-    position: relative; }
+    padding: 5px 35px 5px 0;
+    position: relative;
+    text-align: right; }
   .top-nav .widget_search .widget-title {
     color: #7b7b7b;
     font-size: 15px;
@@ -1531,6 +1533,8 @@ object {
   margin: 1.5em 0; }
   .site-main article.post {
     padding: 20px 0; }
+  .site-main article.post:first-child {
+    padding-top: 0; }
 
 .single .site-main article.post {
   padding-top: 0;
@@ -1952,6 +1956,9 @@ blockquote {
   padding: 40px 0px 40px; }
   .blog article.post .post-thumb {
     padding-top: 10px; }
+
+.blog article.post:first-child {
+  padding-top: 0; }
 
 /*  title divider */
 .title-divider {
@@ -3186,7 +3193,7 @@ blockquote {
       .site-info .left-sidebar .textwidget ul li {
         list-style: none;
         display: inline-block;
-        padding: 10px 15px; }
+        padding: 1px 15px; }
         .site-info .left-sidebar .textwidget ul li a {
           color: #fff; }
           .site-info .left-sidebar .textwidget ul li a:hover {

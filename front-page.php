@@ -63,7 +63,7 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 		$service_section_icon_3 = get_theme_mod('service_section_icon_3');
 
 		if( $service_page1 || $service_page2 || $service_page3 ) { ?>
-			<div class="services-wrapper row">
+			<div class="services-wrapper">
 			    <div class="container"><?php  
 					$service_pages = array($service_page1,$service_page2,$service_page3);
 					$args = array(

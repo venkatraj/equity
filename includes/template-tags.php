@@ -463,7 +463,7 @@ endif;
 add_action( 'the_content_more_link', 'equity_add_more_link_class', 10, 2 );
 if ( ! function_exists( 'equity_add_more_link_class' ) ) :
 	function equity_add_more_link_class($link, $text ) {
-		return '<p class="portfolio-readmore"><a class="btn btn-mini more-link" href="'. esc_url(get_permalink()) .'"><i class="fa fa-chevron-circle-right"></i>'.__('Read More &#8594;','equity').'</a></p>';
+		return '<p class="portfolio-readmore"><a class="btn btn-mini more-link" href="'. esc_url(get_permalink()) .'">'.__('Read More','equity').'</a></p>';
 	}
 endif;
 

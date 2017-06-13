@@ -9,6 +9,9 @@
 	article.post {
 		padding: 20px 0;
 	}
+	article.post:first-child {
+	    padding-top: 0; 
+	}
 }
 
 .single {

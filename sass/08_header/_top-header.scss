@@ -78,8 +78,10 @@
 		}
 	}
 
-    .cart-right {
-      position: relative;   
+    .cart-right { 
+        padding: 5px 35px 5px 0;
+	    position: relative;
+	    text-align: right;  
     }
 
 	/* top header search box */

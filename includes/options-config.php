@@ -1,4 +1,4 @@
-<?php
+<?php   
 $equity_page_builder = esc_html(__( 'Page Builder', 'equity' ));
 $equity_page_builder_details = esc_html(__('Theme supports Page Builder. You can drag and drop our widgets with page builder visual editor.', 'equity' ));
 $equity_page_layout = esc_html(__( 'Page Layout', 'equity' ));
@@ -107,7 +107,7 @@ $equity_why_upgrade = <<< FEATURES
 	<h3>$equity_testimonials</h3>
 	<p>$equity_testimonials_details</p>
 </div>
-<div class="one-third column">
+<div class="one-third column"> 
 	<div class="icon-wrap"><i class="fa  fa-5x fa-skype"></i></div>
 	<h3>$equity_social_media</h3>
 	<p>$equity_social_media_details</p>
@@ -134,7 +134,7 @@ $equity_why_upgrade = <<< FEATURES
 </div>
 FEATURES;
 
-function equity_theme_page() {
+function equity_theme_page() { 
 	$title = esc_html(__('Equity Theme','equity'));  
 	add_theme_page( 
 		esc_html(__( 'Upgrade To Equity Pro','equity')),
@@ -149,7 +149,8 @@ add_action('admin_menu','equity_theme_page');
 
 
 function equity_display_upgrade() {
-  $theme_data = wp_get_theme('equity');  
+  $theme_data = wp_get_theme('equity'); 
+    
     // Check for current viewing tab
     $tab = null;
     if ( isset( $_GET['tab'] ) ) {
@@ -157,18 +158,22 @@ function equity_display_upgrade() {
     } else {
         $tab = null;
     } 
-
+     
+    $pro_theme_url = 'https://webulousthemes.com/theme/equity-pro/';
+    $doc_url  = 'https://www.webulousthemes.com/equity-free';
+    $support_url = 'https://webulousthemes.com/free-support-request/';   
+    
     $current_action_link =  admin_url( 'themes.php?page=equity_upgrade&tab=pro_features' ); ?>
-
     <div class="equity-wrapper about-wrap">
-        <h1><?php printf(esc_html__('Welcome to Equity - Version %1s', 'equity'), $theme_data->Version ); ?></h1><?php
+        <h1><?php printf(esc_html__('Welcome to %1s - Version %2s', 'equity'), $theme_data->Name ,$theme_data->Version ); ?></h1><?php
        	printf( __('<div class="about-text"> Equity Theme is a professional, sophisticated, elegant and robustly built WordPress theme for lawyers, Law Firm and Attorney website. The theme is very versatile and can also be easily used by various types of corporations, business and any kind of sites. core feature of WordPress  Has 4 Footer Widget Areas and lot more of customizer options.</div>', 'equity') ); ?>
         <a href="https://webulousthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>   
-        <p class="upgrade-btn"><a class="upgrade" href="https://webulousthemes.com/theme/equity-pro/" target="_blank"><i class="fa fa-upload"></i><?php _e( ' Upgrade to Pro - $39', 'equity' ); ?></a></p>
+        <p class="upgrade-btn"><a class="upgrade" href="<?php echo esc_url($pro_theme_url); ?>" target="_blank"><?php printf( __( 'Buy %1s Pro - $39', 'equity'), $theme_data->Name ); ?></a></p>
 
 	   <h2 class="nav-tab-wrapper">
-	        <a href="?page=equity_upgrade" class="nav-tab<?php echo is_null($tab) ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'Equity', 'equity' ) ?></a>
-	        <a href="?page=equity_upgrade&tab=pro_features" class="nav-tab<?php echo $tab == 'pro_features' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'PRO Fearures', 'equity' );  ?></a>
+	        <a href="?page=equity_upgrade" class="nav-tab<?php echo is_null($tab) ? ' nav-tab-active' : null; ?>"><?php esc_html_e( $theme_data->Name, 'equity' ) ?></a>
+	        <a href="?page=equity_upgrade&tab=pro_features" class="nav-tab<?php echo $tab == 'pro_features' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'PRO Features', 'equity' );  ?></a>
+            <a href="?page=equity_upgrade&tab=free_vs_pro" class="nav-tab<?php echo $tab == 'free_vs_pro' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'Free VS PRO', 'equity' ); ?></a>
 	        <?php do_action( 'equity_admin_more_tabs' ); ?>
 	    </h2>      
 
@@ -187,7 +192,7 @@ function equity_display_upgrade() {
                             <h3><?php esc_html_e( 'Theme Documentation', 'equity' ); ?></h3>
                             <p class="about"><?php printf(esc_html__('Need any help to setup and configure %s? Please have a look at our documentations instructions.', 'equity'), $theme_data->Name); ?></p>
                             <p>
-                                <a href="<?php echo esc_url( 'https://www.webulousthemes.com/equity-free' ); ?>" target="_blank" class="button button-secondary"><?php esc_html_e('Equity Documentation', 'equity'); ?></a>
+                                <a href="<?php echo esc_url($doc_url); ?>" target="_blank" class="button button-secondary"><?php esc_html_e(' Documentation', 'equity'); ?></a>
                             </p>
                             <?php do_action( 'equity_dashboard_theme_links' ); ?>
                         </div>  
@@ -195,7 +200,7 @@ function equity_display_upgrade() {
                             <h3><?php esc_html_e( 'Having Trouble, Need Support?', 'equity' ); ?></h3>
                             <p class="about"><?php printf(esc_html__('Support for %s WordPress theme is conducted through Webulous free support ticket system.', 'equity'), $theme_data->Name); ?></p>
                             <p>  
-                                <a href="<?php echo esc_url('https://webulousthemes.com/free-support-request/' ); ?>" target="_blank" class="button button-secondary"><?php echo sprintf( esc_html('Create a support ticket', 'equity'), $theme_data->Name); ?></a>
+                                <a href="<?php echo esc_url($support_url); ?>" target="_blank" class="button button-secondary"><?php echo sprintf( esc_html('Create a support ticket', 'equity'), $theme_data->Name); ?></a>
                             </p>
                         </div> 
                        
@@ -213,8 +218,114 @@ function equity_display_upgrade() {
 			    global $equity_why_upgrade; ?>
 				<div class="wrap clearfix">
 				    <?php echo $equity_why_upgrade; ?>
-				</div><?php 
+				</div>
+			</div><?php   
+		} ?>  
+
+       <!-- Free VS PRO tab -->
+        <?php if ( $tab == 'free_vs_pro' ) { ?>
+            <div class="free-vs-pro-tab info-tab-content">
+	            <div id="free_pro">
+	                <table class="free-pro-table">
+		                <thead>
+			                <tr>
+			                    <th></th>
+			                    <th><?php esc_html_e($theme_data->Name, 'equity'); ?> Lite</th>
+			                    <th><?php esc_html_e($theme_data->Name, 'equity'); ?> PRO</th>
+			                </tr>
+		                </thead>
+		                <tbody>
+		                    <tr>
+		                        <td><h3><?php _e('Flex Slider', 'equity'); ?></h3></td>
+		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    <tr>
+		                        <td><h3><?php _e('Support'); ?></h3></td>
+		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    <tr>
+		                        <td><h3><?php _e('Responsive Design'); ?></h3></td>
+		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    <tr>
+		                        <td><h3><?php _e('Custom Logo Option'); ?></h3></td>
+		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    <tr>
+		                         <td><h3><?php _e('Social Links'); ?></h3></td>
+		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    <tr>
+		                    	 <td><h3><?php _e('Unlimited color option'); ?></h3></td>
+		                    	 <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	 <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    <tr>
+		                    	 <td><h3><?php _e('Elastic Slider'); ?></h3></td>
+		                    	 <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	 <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                     <tr>
+		                    	 <td><h3><?php _e('Page Builder Support');?></h3></td>
+		                    	 <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	 <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                     <tr>
+		                    	 <td><h3><?php _e('Page Templates');?></h3></td>
+		                    	 <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	 <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    <tr>
+		                    	<td><h3><?php _e('Google Map');?></h3></td>
+		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    <tr>
+		                    	<td><h3><?php _e('Demo Content');?></h3></td>
+		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                     <tr>
+		                    	<td><h3><?php _e('Polylang Compatible');?></h3></td>
+		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                     <tr>
+		                    	<td><h3><?php _e('Multiple Portfolio Layouts');?></h3></td>
+		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                     <tr>
+		                    	<td><h3><?php _e('Multiple Blog Layouts');?></h3></td>
+		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                     <tr>
+		                    	<td><h3><?php _e('Page Animation');?></h3></td>
+		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                     <tr>
+		                    	<td><h3><?php _e('Unlimited Sidebar ');?></h3></td>
+		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    
+		                    <tr class="ti-about-page-text-center">
+		                        <td></td>
+		                    	<td colspan="2"><a href="<?php echo esc_url($pro_theme_url); ?>" target="_blank" class="button button-primary button-hero"><?php printf( __( 'Buy %1s Pro - $39', 'equity'), $theme_data->Name ); ?></a></td>
+		                    </tr>
+		                </tbody>
+	                </table>			    
+				</div>
+			</div><?php 
 		} ?>
+
     </div><?php
 }
    
@@ -334,16 +445,16 @@ function equity_display_upgrade() {
 								'default' => 1,
 								'sanitize_callback' => 'equity_boolean',
 							),
-							'service_section_icon_1' => array(
+							'service_section_icon_1' => array(  
 								'type' => 'icons-picker',
 								'label' => __('Choose Service Section Icons #1', 'equity'),
 								'sanitize_callback' => 'esc_html',
-							),
+							),  
 							'service_1' => array(
 								'type' => 'dropdown-pages',
 								'label' => __('Service Section #1', 'equity'),
 								'sanitize_callback' => 'absint',
-							),
+							), 
 							'service_section_icon_2' => array(
 								'type' => 'icons-picker',
 								'label' => __('Choose Service Section Icons #2', 'equity'),
@@ -366,13 +477,13 @@ function equity_display_upgrade() {
 							), 
 							'enable_banner_form_section' => array(
                                 'type' => 'checkbox',
-                                'label' => __('Enable Banner Form', 'equity'),
+                                'label' => __('Enable Request a Call Back Form', 'equity'),
                                 'default' => 0,  
                                 'sanitize_callback' => 'equity_boolean',
                             ),
 							'banner_form' => array(
                                 'type' => 'text',
-                                'label' => __('Banner Form', 'equity'),
+                                'label' => __('Request a Call Back Form', 'equity'),
                                 'description' => __( 'Copy and paste the shortcode of the form from the contact form 7.', 'equity' ),
                                 'sanitize_callback' => 'wp_kses_post',   
                             ),  

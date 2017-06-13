@@ -84,23 +84,73 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:103
+#: functions.php:181
+msgctxt "equity"
+msgid "Post One"
+msgstr ""
+
+#: functions.php:182
+msgctxt "equity"
+msgid "<h2>Dedicated of Excellence</h2> Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.<p class=\"portfolio-readmore\"><a class=\"btn btn-mini more-link\" href=\"#\">Read More</a></p>"
+msgstr ""
+
+#: functions.php:187
+msgctxt "equity"
+msgid "Post Two"
+msgstr ""
+
+#: functions.php:188
+msgctxt "equity"
+msgid "<h2>We are Voice of Justice</h2> Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.<p class=\"portfolio-readmore\"><a class=\"btn btn-mini more-link\" href=\"#\">Read More</a></p>"
+msgstr ""
+
+#: functions.php:193
+msgctxt "equity"
+msgid "Service 1"
+msgstr ""
+
+#: functions.php:194, functions.php:200, functions.php:206
+msgctxt "equity"
+msgid "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur"
+msgstr ""
+
+#: functions.php:199
+msgctxt "equity"
+msgid "Service 2"
+msgstr ""
+
+#: functions.php:205
+msgctxt "equity"
+msgid "Service 3"
+msgstr ""
+
+#: functions.php:215
+msgctxt "Theme starter content"
+msgid "slider one"
+msgstr ""
+
+#: functions.php:219
+msgctxt "Theme starter content"
+msgid "Page Images"
+msgstr ""
+
+#: functions.php:260
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:112
+#: functions.php:269
 msgid "Top Left"
 msgstr ""
 
-#: functions.php:121
+#: functions.php:278
 msgid "Top Right"
 msgstr ""
 
-#: functions.php:131
+#: functions.php:288
 msgid "Footer %d"
 msgstr ""
 
-#: functions.php:141
+#: functions.php:298
 msgid "Footer Nav"
 msgstr ""
 
@@ -649,291 +699,299 @@ msgstr ""
 msgid "Upgrade To Equity Pro"
 msgstr ""
 
-#: includes/options-config.php:164
-msgid "Welcome to Equity - Version %1s"
+#: includes/options-config.php:168
+msgid "Welcome to %1s - Version %2s"
 msgstr ""
 
-#: includes/options-config.php:165
+#: includes/options-config.php:169
 msgid "<div class=\"about-text\"> Equity Theme is a professional, sophisticated, elegant and robustly built WordPress theme for lawyers, Law Firm and Attorney website. The theme is very versatile and can also be easily used by various types of corporations, business and any kind of sites. core feature of WordPress  Has 4 Footer Widget Areas and lot more of customizer options.</div>"
 msgstr ""
 
-#: includes/options-config.php:167
-msgid " Upgrade to Pro - $39"
+#: includes/options-config.php:171, includes/options-config.php:321
+msgid "Buy %1s Pro - $39"
 msgstr ""
 
-#: includes/options-config.php:170
-msgid "Equity"
+#: includes/options-config.php:174, includes/options-config.php:233, includes/options-config.php:234
+msgid "$theme_data->Name"
 msgstr ""
 
-#: includes/options-config.php:171
-msgid "PRO Fearures"
+#: includes/options-config.php:175
+msgid "PRO Features"
 msgstr ""
 
-#: includes/options-config.php:180
+#: includes/options-config.php:176
+msgid "Free VS PRO"
+msgstr ""
+
+#: includes/options-config.php:185
 msgid "Theme Customizer"
 msgstr ""
 
-#: includes/options-config.php:181
+#: includes/options-config.php:186
 msgid "%s supports the Theme Customizer for all theme settings. Click \"Customize\" to start customize your site."
 msgstr ""
 
-#: includes/options-config.php:183
+#: includes/options-config.php:188
 msgid "Start Customize"
 msgstr ""
 
-#: includes/options-config.php:187
+#: includes/options-config.php:192
 msgid "Theme Documentation"
 msgstr ""
 
-#: includes/options-config.php:188
+#: includes/options-config.php:193
 msgid "Need any help to setup and configure %s? Please have a look at our documentations instructions."
 msgstr ""
 
-#: includes/options-config.php:190
-msgid "Equity Documentation"
+#: includes/options-config.php:195
+msgid " Documentation"
 msgstr ""
 
-#: includes/options-config.php:195
+#: includes/options-config.php:200
 msgid "Having Trouble, Need Support?"
 msgstr ""
 
-#: includes/options-config.php:196
+#: includes/options-config.php:201
 msgid "Support for %s WordPress theme is conducted through Webulous free support ticket system."
 msgstr ""
 
-#: includes/options-config.php:228, includes/options-config.php:229
+#: includes/options-config.php:239
+msgid "Flex Slider"
+msgstr ""
+
+#: includes/options-config.php:339, includes/options-config.php:340
 msgid "Theme Options"
 msgstr ""
 
-#: includes/options-config.php:232
+#: includes/options-config.php:343
 msgid "General"
 msgstr ""
 
-#: includes/options-config.php:233
+#: includes/options-config.php:344
 msgid "General settings that affects overall site"
 msgstr ""
 
-#: includes/options-config.php:237
+#: includes/options-config.php:348
 msgid "Enable Breadcrumb"
 msgstr ""
 
-#: includes/options-config.php:243
+#: includes/options-config.php:354
 msgid "Select Breadcrumb Character"
 msgstr ""
 
-#: includes/options-config.php:254
+#: includes/options-config.php:365
 msgid "Enable Numeric Page Navigation"
 msgstr ""
 
-#: includes/options-config.php:255
+#: includes/options-config.php:366
 msgid "Check to display numeric page navigation, instead of Previous Posts / Next Posts links."
 msgstr ""
 
-#: includes/options-config.php:261
+#: includes/options-config.php:372
 msgid "Website Layout Options"
 msgstr ""
 
-#: includes/options-config.php:262
+#: includes/options-config.php:373
 msgid "Select main content and sidebar alignment."
 msgstr ""
 
-#: includes/options-config.php:264
+#: includes/options-config.php:375
 msgid "Sidebar Left"
 msgstr ""
 
-#: includes/options-config.php:265
+#: includes/options-config.php:376
 msgid "Sidebar Right"
 msgstr ""
 
-#: includes/options-config.php:266
+#: includes/options-config.php:377
 msgid "Full Width"
 msgstr ""
 
-#: includes/options-config.php:267
+#: includes/options-config.php:378
 msgid "No Sidebar"
 msgstr ""
 
-#: includes/options-config.php:275
+#: includes/options-config.php:386
 msgid "Header"
 msgstr ""
 
-#: includes/options-config.php:276
+#: includes/options-config.php:387
 msgid "Header options"
 msgstr ""
 
-#: includes/options-config.php:280
+#: includes/options-config.php:391
 msgid "Logo as Title"
 msgstr ""
 
-#: includes/options-config.php:286
+#: includes/options-config.php:397
 msgid "Show site Tagline"
 msgstr ""
 
-#: includes/options-config.php:293
+#: includes/options-config.php:404
 msgid "Footer"
 msgstr ""
 
-#: includes/options-config.php:294
+#: includes/options-config.php:405
 msgid "Footer related options"
 msgstr ""
 
-#: includes/options-config.php:298
+#: includes/options-config.php:409
 msgid "Footer Widget Area"
 msgstr ""
 
-#: includes/options-config.php:304
+#: includes/options-config.php:415
 msgid "Footer Copyright Text (Validated that it's HTML Allowed)"
 msgstr ""
 
-#: includes/options-config.php:305
+#: includes/options-config.php:416
 msgid "HTML Allowed. <b>This field is even HTML validated! </b>"
 msgstr ""
 
-#: includes/options-config.php:311
+#: includes/options-config.php:422
 msgid "Home"
 msgstr ""
 
-#: includes/options-config.php:312
+#: includes/options-config.php:423
 msgid "Home Page options"
 msgstr ""
 
-#: includes/options-config.php:316
+#: includes/options-config.php:427
 msgid "Enable Home Page Slider Section"
 msgstr ""
 
-#: includes/options-config.php:322
+#: includes/options-config.php:433
 msgid "Slider Posts Category"
 msgstr ""
 
-#: includes/options-config.php:327
+#: includes/options-config.php:438
 msgid "No. of Sliders"
 msgstr ""
 
-#: includes/options-config.php:333
+#: includes/options-config.php:444
 msgid "Enable Home Page Service Section"
 msgstr ""
 
-#: includes/options-config.php:339
+#: includes/options-config.php:450
 msgid "Choose Service Section Icons #1"
 msgstr ""
 
-#: includes/options-config.php:344
+#: includes/options-config.php:455
 msgid "Service Section #1"
 msgstr ""
 
-#: includes/options-config.php:349
+#: includes/options-config.php:460
 msgid "Choose Service Section Icons #2"
 msgstr ""
 
-#: includes/options-config.php:354
+#: includes/options-config.php:465
 msgid "Service Section #2"
 msgstr ""
 
-#: includes/options-config.php:359
+#: includes/options-config.php:470
 msgid "Choose Service Section Icons #3"
 msgstr ""
 
-#: includes/options-config.php:364
+#: includes/options-config.php:475
 msgid "Service Section #3"
 msgstr ""
 
-#: includes/options-config.php:369
-msgid "Enable Banner Form"
+#: includes/options-config.php:480
+msgid "Enable Request a Call Back Form"
 msgstr ""
 
-#: includes/options-config.php:375
-msgid "Banner Form"
+#: includes/options-config.php:486
+msgid "Request a Call Back Form"
 msgstr ""
 
-#: includes/options-config.php:376
+#: includes/options-config.php:487
 msgid "Copy and paste the shortcode of the form from the contact form 7."
 msgstr ""
 
-#: includes/options-config.php:381
+#: includes/options-config.php:492
 msgid "Enable Home Page Recent Post Section"
 msgstr ""
 
-#: includes/options-config.php:382
+#: includes/options-config.php:493
 msgid "Enable recent post section in home page"
 msgstr ""
 
-#: includes/options-config.php:388
+#: includes/options-config.php:499
 msgid "No. of Recent Posts"
 msgstr ""
 
-#: includes/options-config.php:394
+#: includes/options-config.php:505
 msgid "Enable Home Page Default Content"
 msgstr ""
 
-#: includes/options-config.php:395
+#: includes/options-config.php:506
 msgid "Enable home page default content"
 msgstr ""
 
-#: includes/options-config.php:402
+#: includes/options-config.php:513
 msgid "Blog"
 msgstr ""
 
-#: includes/options-config.php:403
+#: includes/options-config.php:514
 msgid "Blog Related Posts options"
 msgstr ""
 
-#: includes/options-config.php:407
+#: includes/options-config.php:518
 msgid "Enable Featured Image"
 msgstr ""
 
-#: includes/options-config.php:413
+#: includes/options-config.php:524
 msgid "Choose the featured image display type for Blog Page "
 msgstr ""
 
-#: includes/options-config.php:415, includes/options-config.php:431
+#: includes/options-config.php:526, includes/options-config.php:542
 msgid "Large Featured Image"
 msgstr ""
 
-#: includes/options-config.php:416, includes/options-config.php:432
+#: includes/options-config.php:527, includes/options-config.php:543
 msgid "Small Featured Image"
 msgstr ""
 
-#: includes/options-config.php:423
+#: includes/options-config.php:534
 msgid "Enable Single Post Featured Image"
 msgstr ""
 
-#: includes/options-config.php:429
+#: includes/options-config.php:540
 msgid "Choose the featured image display type for Single Page "
 msgstr ""
 
-#: includes/options-config.php:439
+#: includes/options-config.php:550
 msgid " Enable Author Bio Box below single post"
 msgstr ""
 
-#: includes/options-config.php:440
+#: includes/options-config.php:551
 msgid "Show Author information box below single post."
 msgstr ""
 
-#: includes/options-config.php:446
+#: includes/options-config.php:557
 msgid "Show Related posts"
 msgstr ""
 
-#: includes/options-config.php:447
+#: includes/options-config.php:558
 msgid "Show related posts."
 msgstr ""
 
-#: includes/options-config.php:453
+#: includes/options-config.php:564
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: includes/options-config.php:455
+#: includes/options-config.php:566
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: includes/options-config.php:456
+#: includes/options-config.php:567
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: includes/options-config.php:463
+#: includes/options-config.php:574
 msgid " Show Comments"
 msgstr ""
 
-#: includes/options-config.php:464
+#: includes/options-config.php:575
 msgid "Show Comments"
 msgstr ""
 
@@ -1048,8 +1106,23 @@ msgstr ""
 msgid "No Related Posts Yet!"
 msgstr ""
 
-#: includes/template-tags.php:466
-msgid "Read More &#8594;"
+#: includes/template-tags.php:466, template-parts/content.php:40
+msgid "Read More"
+msgstr ""
+
+#: includes/template-tags.php:477
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: includes/template-tags.php:478
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: includes/template-tags.php:479
+msgctxt "submit button"
+msgid "Search"
 msgstr ""
 
 #: includes/template-tags.php:506
@@ -1082,8 +1155,4 @@ msgstr ""
 
 #: template-parts/content-single.php:38, template-parts/content.php:48
 msgid "Pages: "
-msgstr ""
-
-#: template-parts/content.php:40
-msgid "Read More"
 msgstr ""

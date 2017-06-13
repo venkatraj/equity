@@ -88,6 +88,163 @@ function equity_setup() {
 
 	add_image_size( 'equity-service-img', 150,100, true );
 	add_image_size( 'equity-recent-posts-img', 350,250, true );
+
+    // Add theme support for selective refresh for widgets.
+	add_theme_support( 'customize-selective-refresh-widgets' );
+     
+	// Define and register starter content to showcase the theme on new sites.
+	$starter_content = array(
+		'widgets' => array(
+		
+			'top-left' => array(
+				// Widget ID
+			    'my_text' => array(
+					// Widget $id -> set when creating a Widget Class
+		        	'text' , 
+		        	// Widget $instance -> settings 
+					array(
+					  'text'  => '<ul><li>call us: 123 456 789</li></ul>'
+					)
+				)
+			),
+
+			// Put two core-defined widgets in the footer 2 area.
+			'top-right' => array(
+				// Widget ID
+			    'my_text' => array(
+					// Widget $id -> set when creating a Widget Class
+		        	'text' , 
+		        	// Widget $instance -> settings 
+					array(
+					  'text'  => '<a href="#">Request a free consultation →</a>'
+					)
+				),
+				'search',
+			),
+
+			'footer' => array(
+				// Widget ID
+			    'my_text' => array(
+					// Widget $id -> set when creating a Widget Class
+		        	'text' , 
+		        	// Widget $instance -> settings 
+					array(
+					  'text'  => '<h4>About Law</h4>Equity Theme elegant and robustly built WordPress theme for lawyers, Law Firm and Attorney websi<a class="more-link" href="http://webulousthemes.com">Buy Now</a>'
+					)
+				)
+			),
+			'footer-2' => array(
+				// Widget ID
+			    'archives'
+			),
+			'footer-3' => array(
+				// Widget ID
+			    'categories'
+			),
+
+			'footer-4' => array(
+				// Widget ID
+			    'my_text' => array(
+					// Widget $id -> set when creating a Widget Class
+		        	'text' , 
+		        	// Widget $instance -> settings 
+					array(
+					  'text'  => '<h4>Head Office</h4>Honest Bank, 457 Grand Ave,Los Angels, BA 007<br><strong>Email:</strong> <a href="mailto:support@webulous.in">support@webulous.in</a><br><strong>phone:</strong> 0312 3245 2354<br><strong>Fax:</strong> 158 425 252'
+					)
+				)
+			),
+
+			'footer-nav' => array(
+				// Widget ID
+			    'my_text' => array(
+					// Widget $id -> set when creating a Widget Class
+		        	'text' , 
+		        	// Widget $instance -> settings 
+					array(
+					  'text'  => '<ul><li><a href=""><i class="fa fa-facebook"></i></a></li><li><a href=""><i class="fa fa-twitter"></i></a></li><li><a href=""><i class="fa fa-pinterest"></i></a></li></ul>'
+					)
+				)
+			),
+
+		),
+
+		// Specify the core-defined pages to create and add custom thumbnails to some of them.
+		'posts' => array(
+			'home' => array(
+				'post_type' => 'page',
+			),
+			'blog' => array(
+				'post_type' => 'page',
+			),
+			'lawyer-one' => array(
+	            'post_type' => 'post',
+	            'post_title' => _x( 'Post One', 'equity'),
+	            'post_content' => _x( '<h2>Dedicated of Excellence</h2> Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.<p class="portfolio-readmore"><a class="btn btn-mini more-link" href="#">Read More</a></p>', 'equity'),
+	            'thumbnail' => '{{post-featured-image}}',
+	        ),
+	        'lawyer-two' => array(
+	            'post_type' => 'post',
+	            'post_title' => _x( 'Post Two', 'equity'),
+	            'post_content' => _x( '<h2>We are Voice of Justice</h2> Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.<p class="portfolio-readmore"><a class="btn btn-mini more-link" href="#">Read More</a></p>', 'equity'),
+	            'thumbnail' => '{{post-featured-image}}',
+	        ), 
+			'service-one' => array(  
+				'post_type' => 'page',
+				'post_title' => _x( 'Service 1', 'equity'),
+	            'post_content' => _x( 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur', 'equity'),
+				'thumbnail' => '{{page-images}}',
+			),
+			'service-two' => array(
+				'post_type' => 'page',
+				'post_title' => _x( 'Service 2', 'equity'),
+	            'post_content' => _x( 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur', 'equity'),
+				'thumbnail' => '{{page-images}}',
+			),
+			'service-three' => array(
+				'post_type' => 'page',
+				'post_title' => _x( 'Service 3', 'equity'),
+	            'post_content' => _x( 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur', 'equity'),
+				'thumbnail' => '{{page-images}}',
+			),
+			
+		),
+
+		// Create the custom image attachments used as post thumbnails for pages.
+		'attachments' => array(
+			'post-featured-image' => array( 
+				'post_title' => _x( 'slider one', 'Theme starter content', 'equity' ),
+				'file' => 'images/slider.png', // URL relative to the template directory.
+			),
+			'page-images' => array(
+				'post_title' => _x( 'Page Images', 'Theme starter content', 'equity' ),
+				'file' => 'images/page.png', // URL relative to the template directory.
+			),
+		),
+
+		// Default to a static front page and assign the front and posts pages.
+		'options' => array(
+			'show_on_front' => 'page',
+			'page_on_front' => '{{home}}',
+			'page_for_posts' => '{{blog}}',
+		),  
+
+		// Set the front page section theme mods to the IDs of the core-registered pages.
+		'theme_mods' => array( 
+			'slider_cat' => '1',
+			'service_1' => '{{service-one}}',
+			'service_2' => '{{service-two}}',
+			'service_3' => '{{service-three}}',
+			'service_section_icon_1' => 'fa-user',
+			'service_section_icon_2' => 'fa-heart',
+			'service_section_icon_3' => 'fa-apple',
+		),
+
+	);
+
+	$starter_content = apply_filters( 'equity_starter_content', $starter_content );
+
+	add_theme_support( 'starter-content', $starter_content );
+
 	     
 }
 endif; // equity_setup
