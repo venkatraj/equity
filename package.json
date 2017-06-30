@@ -15,7 +15,11 @@
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^2.1.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-sort": "^2.0.0",
+    "gulp-translator": "^0.2.0",
+    "gulp-wp-pot": "^2.0.4"
+  }, 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

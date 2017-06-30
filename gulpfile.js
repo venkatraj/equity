@@ -10,7 +10,7 @@ var cache = require('gulp-cache');
 var del = require('del');  
 var wpPot = require('gulp-wp-pot'); // For generating the .pot file.
 var sort = require('gulp-sort'); // Recommended to prevent unnecessary changes in pot-file.  
- 
+  
            
 /* Translate .pot file */ 
 gulp.task( 'translate', function () {   

@@ -24,7 +24,7 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 		if ( $slider_cat ) {		
 			$query = new WP_Query($slider_posts);        
 			if( $query->have_posts()) : ?>
-				<div class="flexslider">  
+				<div class="flexslider free-flex">  
 					<ul class="slides">
 						<?php while($query->have_posts()) :
 								$query->the_post();
@@ -46,7 +46,7 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 			<?php endif; ?>
 		   <?php  
 			$query = null;
-			wp_reset_postdata();
+			wp_reset_postdata(); 
 			
 		} 
     endif;  
@@ -54,13 +54,13 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
     if( get_theme_mod('service_field',true) ) {
        do_action('service_content_before');
       
-		$service_page1 = get_theme_mod('service_1');
-		$service_page2 = get_theme_mod('service_2');
-		$service_page3 = get_theme_mod('service_3');
+		$service_page1 = intval(get_theme_mod('service_1'));
+		$service_page2 = intval(get_theme_mod('service_2'));
+		$service_page3 = intval(get_theme_mod('service_3'));
 		
-		$service_section_icon_1 = get_theme_mod('service_section_icon_1');
-		$service_section_icon_2 = get_theme_mod('service_section_icon_2');
-		$service_section_icon_3 = get_theme_mod('service_section_icon_3');
+		$service_section_icon_1 = esc_attr(get_theme_mod('service_section_icon_1'));
+		$service_section_icon_2 = esc_attr(get_theme_mod('service_section_icon_2'));
+		$service_section_icon_3 = esc_attr(get_theme_mod('service_section_icon_3'));
 
 		if( $service_page1 || $service_page2 || $service_page3 ) { ?>
 			<div class="services-wrapper">

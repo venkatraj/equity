@@ -5,12 +5,6 @@
  * @package Equity
  */
 
-/**
- * Set the content width based on the theme's design and stylesheet.
- */
-if ( ! isset( $content_width ) ) {  
-	$content_width = 780; /* pixels */
-}
 
 if ( ! function_exists( 'equity_setup' ) ) :  
 /**
@@ -68,6 +62,10 @@ function equity_setup() {
 		'default-image' => '',
 	) ) );
 
+	/**
+	 * Set the content width in pixels, based on the theme's design and stylesheet.
+	 */
+	$GLOBALS['content_width'] = apply_filters( 'equity_content_width', 640 );
 
     /* 
     * Custom Logo 
@@ -78,6 +76,9 @@ function equity_setup() {
 	/* Woocommerce support */
 
 	add_theme_support('woocommerce');
+	add_theme_support( 'wc-product-gallery-zoom' );
+	add_theme_support( 'wc-product-gallery-lightbox' );
+	add_theme_support( 'wc-product-gallery-slider' ); 
 
 	/*
 	 * Add Additional image sizes
@@ -129,7 +130,8 @@ function equity_setup() {
 		        	'text' , 
 		        	// Widget $instance -> settings 
 					array(
-					  'text'  => '<h4>About Law</h4>Equity Theme elegant and robustly built WordPress theme for lawyers, Law Firm and Attorney websi<a class="more-link" href="http://webulousthemes.com">Buy Now</a>'
+					  'title' => __('About Law','equity'),
+					  'text'  => __('Equity Theme elegant and robustly built WordPress theme for lawyers, Law Firm and Attorney website.<a class="more-link" href="#">Buy Now</a>','equity'),
 					)
 				)
 			),
@@ -149,7 +151,8 @@ function equity_setup() {
 		        	'text' , 
 		        	// Widget $instance -> settings 
 					array(
-					  'text'  => '<h4>Head Office</h4>Honest Bank, 457 Grand Ave,Los Angels, BA 007<br><strong>Email:</strong> <a href="mailto:support@webulous.in">support@webulous.in</a><br><strong>phone:</strong> 0312 3245 2354<br><strong>Fax:</strong> 158 425 252'
+					  'title' => __('Head Office','equity'),
+					  'text'  => __( 'Honest Bank, 457 Grand Ave,Los Angels, BA 007<br><strong>Email:</strong> <a href="mailto:xxx@mail.com">xxx@mail.com</a><br><strong>phone:</strong> 1234 5624 2586<br><strong>Fax:</strong> 158 425 252','equity'),
 					)
 				)
 			),
@@ -161,7 +164,7 @@ function equity_setup() {
 		        	'text' , 
 		        	// Widget $instance -> settings 
 					array(
-					  'text'  => '<ul><li><a href=""><i class="fa fa-facebook"></i></a></li><li><a href=""><i class="fa fa-twitter"></i></a></li><li><a href=""><i class="fa fa-pinterest"></i></a></li></ul>'
+					  'text'  => '<ul><li><a href="#"><i class="fa fa-facebook"></i></a></li><li><a href="#"><i class="fa fa-twitter"></i></a></li><li><a href="#"><i class="fa fa-pinterest"></i></a></li></ul>'
 					)
 				)
 			),

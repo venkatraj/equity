@@ -72,7 +72,7 @@ if ( is_singular() && pings_open() ) { ?>
 
 	</header><!-- #masthead --> 
 
-	<?php if ( function_exists( 'is_woocommerce' ) || function_exists( 'is_cart' ) || function_exists( 'is_chechout' ) ) :
+	<?php if ( function_exists( 'is_woocommerce' ) || function_exists( 'is_cart' ) || function_exists( 'is_checkout' ) ) :
 	 if ( is_woocommerce() || is_cart() || is_checkout() ) { ?>
 	   <?php $breadcrumb = get_theme_mod( 'breadcrumb',true ); ?>    
 		   <div class="breadcrumb">

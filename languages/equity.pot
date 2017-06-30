@@ -80,77 +80,83 @@ msgstr ""
 msgid "Request a Call Back "
 msgstr ""
 
-#: functions.php:53
+#: functions.php:47
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:181
-msgctxt "equity"
+#: functions.php:133
+msgid "About Law"
+msgstr ""
+
+#: functions.php:134
+msgid "Equity Theme elegant and robustly built WordPress theme for lawyers, Law Firm and Attorney website.<a class=\"more-link\" href=\"#\">Buy Now</a>"
+msgstr ""
+
+#: functions.php:154
+msgid "Head Office"
+msgstr ""
+
+#: functions.php:155
+msgid "Honest Bank, 457 Grand Ave,Los Angels, BA 007<br><strong>Email:</strong> <a href=\"mailto:xxx@mail.com\">xxx@mail.com</a><br><strong>phone:</strong> 1234 5624 2586<br><strong>Fax:</strong> 158 425 252"
+msgstr ""
+
+#: functions.php:184
 msgid "Post One"
 msgstr ""
 
-#: functions.php:182
-msgctxt "equity"
+#: functions.php:185
 msgid "<h2>Dedicated of Excellence</h2> Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.<p class=\"portfolio-readmore\"><a class=\"btn btn-mini more-link\" href=\"#\">Read More</a></p>"
 msgstr ""
 
-#: functions.php:187
-msgctxt "equity"
+#: functions.php:190
 msgid "Post Two"
 msgstr ""
 
-#: functions.php:188
-msgctxt "equity"
+#: functions.php:191
 msgid "<h2>We are Voice of Justice</h2> Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.<p class=\"portfolio-readmore\"><a class=\"btn btn-mini more-link\" href=\"#\">Read More</a></p>"
 msgstr ""
 
-#: functions.php:193
-msgctxt "equity"
+#: functions.php:196
 msgid "Service 1"
 msgstr ""
 
-#: functions.php:194, functions.php:200, functions.php:206
-msgctxt "equity"
+#: functions.php:197, functions.php:203, functions.php:209
 msgid "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur"
 msgstr ""
 
-#: functions.php:199
-msgctxt "equity"
+#: functions.php:202
 msgid "Service 2"
 msgstr ""
 
-#: functions.php:205
-msgctxt "equity"
+#: functions.php:208
 msgid "Service 3"
 msgstr ""
 
-#: functions.php:215
-msgctxt "Theme starter content"
+#: functions.php:218
 msgid "slider one"
 msgstr ""
 
-#: functions.php:219
-msgctxt "Theme starter content"
+#: functions.php:222
 msgid "Page Images"
 msgstr ""
 
-#: functions.php:260
+#: functions.php:263
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:269
+#: functions.php:272
 msgid "Top Left"
 msgstr ""
 
-#: functions.php:278
+#: functions.php:281
 msgid "Top Right"
 msgstr ""
 
-#: functions.php:288
+#: functions.php:291
 msgid "Footer %d"
 msgstr ""
 
-#: functions.php:298
+#: functions.php:301
 msgid "Footer Nav"
 msgstr ""
 
@@ -534,6 +540,14 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
+#: includes/custom-header.php:83
+msgid "Play background video"
+msgstr ""
+
+#: includes/custom-header.php:84
+msgid "Pause background video"
+msgstr ""
+
 #: includes/enqueue.php:38
 msgctxt "Font: on or off"
 msgid "on"
@@ -555,7 +569,7 @@ msgstr ""
 msgid "Theme offers many different page layouts so you can quickly and easily create your pages with no hassle!"
 msgstr ""
 
-#: includes/options-config.php:6
+#: includes/options-config.php:6, includes/options-config.php:314
 msgid "Unlimited Sidebar"
 msgstr ""
 
@@ -651,7 +665,7 @@ msgstr ""
 msgid "Want your users to stay in touch? No problem, Theme has Social Media icons all throughout the theme!"
 msgstr ""
 
-#: includes/options-config.php:30
+#: includes/options-config.php:30, includes/options-config.php:284
 msgid "Google Map"
 msgstr ""
 
@@ -700,7 +714,7 @@ msgid "Upgrade To Equity Pro"
 msgstr ""
 
 #: includes/options-config.php:168
-msgid "Welcome to %1s - Version %2s"
+msgid "Welcome to %1$s - Version %2$s"
 msgstr ""
 
 #: includes/options-config.php:169
@@ -709,10 +723,6 @@ msgstr ""
 
 #: includes/options-config.php:171, includes/options-config.php:321
 msgid "Buy %1s Pro - $39"
-msgstr ""
-
-#: includes/options-config.php:174, includes/options-config.php:233, includes/options-config.php:234
-msgid "$theme_data->Name"
 msgstr ""
 
 #: includes/options-config.php:175
@@ -757,6 +767,58 @@ msgstr ""
 
 #: includes/options-config.php:239
 msgid "Flex Slider"
+msgstr ""
+
+#: includes/options-config.php:244
+msgid "Support"
+msgstr ""
+
+#: includes/options-config.php:249
+msgid "Responsive Design"
+msgstr ""
+
+#: includes/options-config.php:254
+msgid "Custom Logo Option"
+msgstr ""
+
+#: includes/options-config.php:259
+msgid "Social Links"
+msgstr ""
+
+#: includes/options-config.php:264
+msgid "Unlimited color option"
+msgstr ""
+
+#: includes/options-config.php:269
+msgid "Elastic Slider"
+msgstr ""
+
+#: includes/options-config.php:274
+msgid "Page Builder Support"
+msgstr ""
+
+#: includes/options-config.php:279
+msgid "Page Templates"
+msgstr ""
+
+#: includes/options-config.php:289
+msgid "Demo Content"
+msgstr ""
+
+#: includes/options-config.php:294
+msgid "Polylang Compatible"
+msgstr ""
+
+#: includes/options-config.php:299
+msgid "Multiple Portfolio Layouts"
+msgstr ""
+
+#: includes/options-config.php:304
+msgid "Multiple Blog Layouts"
+msgstr ""
+
+#: includes/options-config.php:309
+msgid "Page Animation"
 msgstr ""
 
 #: includes/options-config.php:339, includes/options-config.php:340
@@ -1125,11 +1187,11 @@ msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
-#: includes/template-tags.php:506
+#: includes/template-tags.php:516
 msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
 msgstr ""
 
-#: includes/template-tags.php:507
+#: includes/template-tags.php:517
 msgid "Get started with Equity"
 msgstr ""
 

@@ -1,9 +1,9 @@
 === Equity ===
 Contributors: Webulous
-Tags: custom-menu, featured-images, fixed-layout, responsive-layout, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, blog
-Requires at least: 4.0
+Tags: blog, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, translation-ready, theme-options
+Requires at least: 4.3
 Tested up to: 4.8
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
      
@@ -45,12 +45,12 @@ Enable/Disable featured images visibility.
 
 == Changelog ==
 
-= 1.0.1 =
+= 1.0.3 =
 * Initial Release
 
 == Upgrade Notice ==
 
-=  1.0.1 =
+=  1.0.3 =
 * Initial Release
 
 Equity WordPress Theme bundles the following third-party resources:
@@ -61,7 +61,7 @@ Equity WordPress Theme bundles the following third-party resources:
 * {FontAwesome Icon Picker} © Licensed under the MIT License, https://github.com/mjolnic/fontawesome-iconpicker/blob/master/LICENSE
 * {FontAwesome} © Dave Gandy, SIL OFL 1.1 and MIT ,https://fortawesome.github.io/Font-Awesome
 * Screenshot Images is licensed under CC0 Public Domain License.
-	* image © 2015 flickr, CC0 1.0 ,https://www.flickr.com/photos/olympialawpc/32724082744/
-	* image © 2015 flickr, CC0 1.0 ,https://www.flickr.com/photos/68577561@N07/9550484326/
+	* image © 2015 Pixabay, CC0 1.0 ,https://pixabay.com/en/hammer-court-dollar-dollar-sign-1537123/
+	* image © 2015 Pixabay, CC0 1.0 ,https://pixabay.com/en/handsome-guy-business-man-885388/ 
 * All Images inside the images folder are created by own. Those Image are licensed under CC0 Public Domain License GPLv3.
 

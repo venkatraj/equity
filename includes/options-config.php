@@ -1,4 +1,4 @@
-<?php   
+<?php      
 $equity_page_builder = esc_html(__( 'Page Builder', 'equity' ));
 $equity_page_builder_details = esc_html(__('Theme supports Page Builder. You can drag and drop our widgets with page builder visual editor.', 'equity' ));
 $equity_page_layout = esc_html(__( 'Page Layout', 'equity' ));
@@ -165,7 +165,7 @@ function equity_display_upgrade() {
     
     $current_action_link =  admin_url( 'themes.php?page=equity_upgrade&tab=pro_features' ); ?>
     <div class="equity-wrapper about-wrap">
-        <h1><?php printf(esc_html__('Welcome to %1s - Version %2s', 'equity'), $theme_data->Name ,$theme_data->Version ); ?></h1><?php
+        <h1><?php printf( esc_html__('Welcome to %1$s - Version %2$s', 'equity'), $theme_data->Name ,$theme_data->Version ); ?></h1><?php
        	printf( __('<div class="about-text"> Equity Theme is a professional, sophisticated, elegant and robustly built WordPress theme for lawyers, Law Firm and Attorney website. The theme is very versatile and can also be easily used by various types of corporations, business and any kind of sites. core feature of WordPress  Has 4 Footer Widget Areas and lot more of customizer options.</div>', 'equity') ); ?>
         <a href="https://webulousthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>   
         <p class="upgrade-btn"><a class="upgrade" href="<?php echo esc_url($pro_theme_url); ?>" target="_blank"><?php printf( __( 'Buy %1s Pro - $39', 'equity'), $theme_data->Name ); ?></a></p>
@@ -378,7 +378,7 @@ function equity_display_upgrade() {
                                     'no-sidebar' => __('No Sidebar', 'equity'),
                                 ),
                                 'default' => 'right',  
-                                'sanitize_callback' => 'esc_html', 
+                                'sanitize_callback' => 'sanitize_text_field', 
                             ),
 						),
 					),
@@ -458,7 +458,7 @@ function equity_display_upgrade() {
 							'service_section_icon_2' => array(
 								'type' => 'icons-picker',
 								'label' => __('Choose Service Section Icons #2', 'equity'),
-								'sanitize_callback' => 'esc_html',
+								'sanitize_callback' => 'sanitize_text_field',
 							),
 							'service_2' => array(
 								'type' => 'dropdown-pages',

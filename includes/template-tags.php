@@ -302,7 +302,7 @@ if( ! function_exists('equity_recent_posts') ) {
 				$parent_id  = $post->post_parent;
 				$breadcrumbs = array();
 				while ($parent_id) {
-					$page = get_page($parent_id);
+					$page = get_page($parent_id); 
 					$breadcrumbs[] = sprintf($link, get_permalink($page->ID), get_the_title($page->ID));
 					$parent_id  = $page->post_parent;
 				}
@@ -482,6 +482,16 @@ if( !function_exists('equity_get_search_form') ) {
 	}
 }
 
+add_action('equity_before_header','equity_before_header_video');
+if(!function_exists('equity_before_header_video')){
+	function equity_before_header_video() {
+		if(function_exists('the_custom_header_markup') ) { ?>
+		    <div class="custom-header-media">
+				<?php the_custom_header_markup(); ?>
+			</div>
+	    <?php } 
+	}
+}
 
 /* Admin notice */
 /* Activation notice */
