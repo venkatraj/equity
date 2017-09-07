@@ -448,7 +448,7 @@ function equity_display_upgrade() {
 							'service_section_icon_1' => array(  
 								'type' => 'icons-picker',
 								'label' => __('Choose Service Section Icons #1', 'equity'),
-								'sanitize_callback' => 'esc_html',
+								'sanitize_callback' => 'sanitize_text_field',
 							),  
 							'service_1' => array(
 								'type' => 'dropdown-pages',
@@ -468,7 +468,7 @@ function equity_display_upgrade() {
 							'service_section_icon_3' => array( 
 								'type' => 'icons-picker',
 								'label' => __('Choose Service Section Icons #3', 'equity'),
-								'sanitize_callback' => 'esc_html',
+								'sanitize_callback' => 'sanitize_text_field',
 							),
 							'service_3' => array(
 								'type' => 'dropdown-pages',

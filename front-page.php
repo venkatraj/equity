@@ -34,9 +34,11 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 								    	    <div class="gym-slide-overlay"></div>
 								    		<?php the_post_thumbnail('full'); ?>
 								    	</div>
+								    	<?php if( !empty( get_the_content() ) ) { ?>
 								    	<div class="flex-caption">
 								    		<?php the_content(); ?>
 								    	</div>
+								    	<?php } ?>
 								    </li>
 							    <?php endif;?>			   
 						<?php endwhile; ?>
