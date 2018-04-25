@@ -226,4 +226,56 @@ a[href="themes.php?page=equity_upgrade"] {
     font-size: 50px;
     color: #03a9f4; }
 
+/* new to creating webiste section */
+#webulous-create-web {
+  background-color: #39853b;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 400; }
+  #webulous-create-web #webulous-mode-wrap {
+    padding: 30px 50px 30px 50px;
+    color: #fff; 
+    margin-right:200px;}
+    #webulous-create-web #webulous-mode-wrap p {
+      margin-bottom: 15px;
+      text-align: left;
+      font-size:16px; }
+#webulous-create-web {
+  position:relative;
+}
+#webulous-create-web img {
+  position: absolute;
+  top:30px;
+  right:35px;
+  border:none;
+}
+#webulous-create-web a {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+#webulous-create-web h3 {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: left;
+  color:#fff;}
+
+@media only screen and (max-width:550px) {
+  #webulous-create-web #webulous-mode-wrap {
+      margin-right: 0px;
+  }
+  #webulous-create-web img {
+    position: static;
+  }
+  #webulous-create-web h3 {
+    font-size: 2.2rem;
+  }
+}
+
+
 /*# sourceMappingURL=admin.css.map */

@@ -20,5 +20,5 @@ if( !is_front_page() ): ?>
 				</div>
 			<?php endif; ?>
 		</div>
-	</div><?php  
+	</div><?php   
 endif;

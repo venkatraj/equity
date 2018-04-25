@@ -2,8 +2,8 @@
 Contributors: Webulous
 Tags: blog, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, translation-ready, theme-options
 Requires at least: 4.3
-Tested up to: 4.8.2
-Stable tag: 1.0.5
+Tested up to: 4.9.5
+Stable tag: 1.0.9
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
      
@@ -44,6 +44,21 @@ Select 'Blog' section
 Enable/Disable featured images visibility.
 
 == Changelog ==
+
+
+= 1.0.9 =
+ * Post Exclude Option added. 
+
+= 1.0.8 =
+ * PHP error fixed(Empty function).
+
+= 1.0.7 =
+ * Added site Creation Ads in Theme Upgrade Page.
+ 
+= 1.0.6 = 
+ * Header Style option added.
+ * Woocommerce Breadcrumb issue fixed.
+
 = 1.0.5 = 
  * Updated flexslider and font-awesome icons 
 
@@ -55,8 +70,9 @@ Enable/Disable featured images visibility.
 
 == Upgrade Notice ==
 
-= 1.0.5 = 
- * Updated flexslider and font-awesome icons 
+= 1.0.9 =
+ * Post Exclude Option added. 
+
 
 Equity WordPress Theme bundles the following third-party resources:
 == Resources ==

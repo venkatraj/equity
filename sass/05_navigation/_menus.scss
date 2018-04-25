@@ -505,3 +505,43 @@ a.more-link {
 
 }
 
+.header-style2 {
+	.eight .site-branding,.sixteen .site-branding{
+		padding:15px 0px;
+		text-align:padding-left !important;
+		.site-title a {
+			color:$secondary;
+		}
+	}
+	.eight .top-nav {
+		margin-top:9%;
+	}
+}
+
+.nav-wrap {
+	padding:0px;
+	.sixteen  .main-navigation {
+		float:none;
+		a {
+			padding:22px 20px;
+		}
+		li:first-child a {
+			padding-left:0px;
+		}
+		ul ul {
+			li:first-child a {
+				padding-left:20px;
+			}
+			a {
+				padding:10px 20px;
+			}
+			li {
+				&:hover {
+					ul {
+						left:100%;
+					}
+				}
+			}
+		}
+	}
+}

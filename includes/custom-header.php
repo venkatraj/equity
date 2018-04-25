@@ -11,7 +11,7 @@
 function equity_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'equity_custom_header_args', array(
 		'default-image'          => '',
-		'default-text-color'     => 'ffffff', 
+		'default-text-color'     => '', 
 		'header_text'            => true,
 		'width'                  => 1920,  
 		'height'                 => 400,

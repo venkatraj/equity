@@ -159,15 +159,15 @@ function equity_display_upgrade() {
         $tab = null;
     } 
      
-    $pro_theme_url = 'https://webulousthemes.com/theme/equity-pro/';
+    $pro_theme_url = 'https://www.webulousthemes.com/theme/equity-pro/';
     $doc_url  = 'https://www.webulousthemes.com/equity-free';
-    $support_url = 'https://webulousthemes.com/free-support-request/';   
+    $support_url = 'https://www.webulousthemes.com/free-support-request/';   
     
     $current_action_link =  admin_url( 'themes.php?page=equity_upgrade&tab=pro_features' ); ?>
     <div class="equity-wrapper about-wrap">
         <h1><?php printf( esc_html__('Welcome to %1$s - Version %2$s', 'equity'), $theme_data->Name ,$theme_data->Version ); ?></h1><?php
-       	printf( __('<div class="about-text"> Equity Theme is a professional, sophisticated, elegant and robustly built WordPress theme for lawyers, Law Firm and Attorney website. The theme is very versatile and can also be easily used by various types of corporations, business and any kind of sites. core feature of WordPress  Has 4 Footer Widget Areas and lot more of customizer options.</div>', 'equity') ); ?>
-        <a href="https://webulousthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>   
+        echo sprintf( '<div class="about-text">%1$s</div>',__(' Equity Theme is a professional, sophisticated, elegant and robustly built WordPress theme for lawyers, Law Firm and Attorney website. The theme is very versatile and can also be easily used by various types of corporations, business and any kind of sites. core feature of WordPress  Has 4 Footer Widget Areas and lot more of customizer options.','equity') ); ?>
+        <a href="https://www.webulousthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>   
         <p class="upgrade-btn"><a class="upgrade" href="<?php echo esc_url($pro_theme_url); ?>" target="_blank"><?php printf( __( 'Buy %1s Pro - $39', 'equity'), $theme_data->Name ); ?></a></p>
 
 	   <h2 class="nav-tab-wrapper">
@@ -180,6 +180,16 @@ function equity_display_upgrade() {
         <?php if ( is_null( $tab ) ) { ?>
             <div class="theme_info info-tab-content">
                 <div class="theme_info_column clearfix">
+                	<div id="webulous-create-web">
+                        <a href="https://www.webulousthemes.com/checkout?edd_action=add_to_cart&download_id=23052" target="_blank">
+							<div id="webulous-mode-wrap">
+								<?php echo sprintf ('<h3>%1$s</h3><p>%2$s</p>',__('New to Creating a Website?','equity'),__('We will build you a complete website based on the theme you selected. We will populate content, change colors and do any look and feel customisation work you prefer.','equity') ); ?>
+							</div>
+							<div class="image-wrap">
+								<?php echo sprintf ( '<img src="'. get_template_directory_uri() .'/images/api.png" alt="%1$s" />',__('Image','equity') ); ?>
+							</div>
+						</a>
+                    </div>
                     <div class="theme_info_left">
                         <div class="theme_link">
                             <h3><?php esc_html_e( 'Theme Customizer', 'equity' ); ?></h3>
@@ -257,7 +267,7 @@ function equity_display_upgrade() {
 		                    </tr>
 		                    <tr>
 		                         <td><h3><?php _e('Social Links', 'equity'); ?></h3></td>
-		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                         <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
 		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                    <tr>
@@ -398,6 +408,17 @@ function equity_display_upgrade() {
 								'default' => 1,
 								'sanitize_callback' => 'equity_boolean',
 							),
+							'header-site-style' => array(
+                                'type' => 'radio',
+                                'label' => __('Header Style Options', 'equity'),
+                                'description' => __('Select header styles.', 'equity'),
+                                'choices' => array(
+                                    'style1' =>  __('Style 1', 'equity'),
+    								'style2' =>  __('Style 2', 'equity'),
+                                ),
+                                'default' => 'style1',  
+                                'sanitize_callback' => 'sanitize_text_field', 
+                            ),
 						),
 					),
 					'footer' => array(
@@ -490,7 +511,6 @@ function equity_display_upgrade() {
 							'enable_recent_post_service' => array(
                                 'type' => 'checkbox',
                                 'label' => __('Enable Home Page Recent Post Section', 'equity'),
-                                'description' => __('Enable recent post section in home page', 'equity'),
                                 'default' => 1,
                                 'sanitize_callback' => 'equity_boolean',  
                             ), 
@@ -500,10 +520,15 @@ function equity_display_upgrade() {
 								'sanitize_callback' => 'absint',
 								'default' => 3,  
 							), 
+							'recent_posts_exclude' => array(
+								'type' => 'text',
+								'label' => __('Exclude the Posts from Home Page', 'equity'),
+								'description' => __('Post IDs, separated by commas.','equity'),
+								'sanitize_callback' => 'sanitize_text_field', 
+							), 
 							'enable_home_default_content' => array(
                                 'type' => 'checkbox',
                                 'label' => __('Enable Home Page Default Content', 'equity'),
-                                'description' => __('Enable home page default content', 'equity'),
                                 'default' => 0,  
                                 'sanitize_callback' => 'equity_boolean',
                             ),

@@ -41,6 +41,9 @@ function equity_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-formats', array(
+		'aside', 'image', 'video', 'quote', 'link',
+	) );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -101,10 +104,10 @@ function equity_setup() {
 				// Widget ID
 			    'my_text' => array(
 					// Widget $id -> set when creating a Widget Class
-		        	'text' , 
+		        	'custom_html' , 
 		        	// Widget $instance -> settings 
 					array(
-					  'text'  => '<ul><li>call us: 123 456 789</li></ul>'
+					  'content'  => '<ul><li>call us: 123 456 789</li></ul>'
 					)
 				)
 			),
@@ -114,10 +117,10 @@ function equity_setup() {
 				// Widget ID
 			    'my_text' => array(
 					// Widget $id -> set when creating a Widget Class
-		        	'text' , 
+		        	'custom_html' , 
 		        	// Widget $instance -> settings 
 					array(
-					  'text'  => '<a href="#">Request a free consultation →</a>'
+					  'content'  => '<a href="#">Request a free consultation →</a>'
 					)
 				),
 				'search',
@@ -161,10 +164,10 @@ function equity_setup() {
 				// Widget ID
 			    'my_text' => array(
 					// Widget $id -> set when creating a Widget Class
-		        	'text' , 
+		        	'custom_html' , 
 		        	// Widget $instance -> settings 
 					array(
-					  'text'  => '<ul><li><a href="#"><i class="fa fa-facebook"></i></a></li><li><a href="#"><i class="fa fa-twitter"></i></a></li><li><a href="#"><i class="fa fa-pinterest"></i></a></li></ul>'
+					  'content'  => '<ul><li><a href="#"><i class="fa fa-facebook"></i></a></li><li><a href="#"><i class="fa fa-twitter"></i></a></li><li><a href="#"><i class="fa fa-pinterest"></i></a></li></ul>'
 					)
 				)
 			),
@@ -353,8 +356,31 @@ require get_template_directory() . '/admin/class-tgm-plugin-activation.php';
 remove_action('woocommerce_before_main_content', 'woocommerce_output_content_wrapper');
 add_action('woocommerce_before_main_content', 'equity_output_content_wrapper');
 
+
 function equity_output_content_wrapper() {
-	echo '<div class="container"><div class="row"><div id="primary" class="content-area eleven columns">';
+	$woocommerce_sidebar = get_theme_mod('woocommerce_sidebar',true ) ;
+	if( $woocommerce_sidebar ) {
+        $woocommerce_sidebar_column = 'eleven';
+    }else {
+        $woocommerce_sidebar_column = 'sixteen';
+        remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar');
+    }
+    $page_breadcrumb = get_theme_mod('breadcrumb');
+    if( function_exists('woocommerce_breadcrumb') && (!is_front_page())) {
+        echo '<div class="breadcrumb woocommerce-breadcrumb-class" style="margin-bottom: 30px;"><div class="container">';
+        		echo '<div class="sixteen columns"><div class="breadcrumb-left">';?>
+		        		<h4><?php woocommerce_page_title();?></h4>
+		 			<?php echo '</div>';
+		 			if( isset( $page_breadcrumb) || ! empty($page_breadcrumb ) ):?>
+			 			<div class="breadcrumb-right">
+						 	<?php woocommerce_breadcrumb(); ?>
+						</div>
+					<?php endif; 
+				echo '</div>';
+		  
+		 echo '</div></div>';
+    }
+	echo '<div class="site-content container" id="content"><div id="primary" class="content-area '. $woocommerce_sidebar_column .' columns">';	
 }
 
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end' );
@@ -364,7 +390,7 @@ function equity_output_content_wrapper_end () {
 	echo "</div>";
 }
 
-add_action( 'wp_head', 'equity_remove_wc_breadcrumbs' );
+add_action( 'init', 'equity_remove_wc_breadcrumbs' );
 function equity_remove_wc_breadcrumbs() {
    	remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
 }  

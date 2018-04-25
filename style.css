@@ -4,7 +4,7 @@ Theme URI: http://www.webulousthemes.com/equity/
 Author: N. Venkat Raj
 Author URI: http://www.webulousthemes.com/                         
 Description: Equity Theme is a professional, sophisticated, elegant and robustly built WordPress theme for lawyers, Law Firm and Attorney website. The theme is very versatile and can also be easily used by various types of corporations, business and any kind of sites. core feature of WordPress  Has 4 Footer Widget Areas and lot more of customizer options.
-Version: 1.0.5        
+Version: 1.0.9     
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: equity  
@@ -660,7 +660,6 @@ input[type="submit"] {
   padding: 1.2em 1.5em;
   color: #fff;
   font-weight: 700;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
 button:hover,
@@ -781,7 +780,6 @@ dd {
 a {
   color: #cc8800;
   text-decoration: none;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
   a:visited {
     color: #cc8800; }
@@ -1167,6 +1165,30 @@ a.more-link {
   .navigation.pagination .prev.page-numbers, .navigation.pagination .next.page-numbers {
     border: none; }
 
+.header-style2 .eight .site-branding, .header-style2 .sixteen .site-branding {
+  padding: 15px 0px;
+  text-align: padding-left !important; }
+  .header-style2 .eight .site-branding .site-title a, .header-style2 .sixteen .site-branding .site-title a {
+    color: #1a1d25; }
+
+.header-style2 .eight .top-nav {
+  margin-top: 9%; }
+
+.nav-wrap {
+  padding: 0px; }
+  .nav-wrap .sixteen .main-navigation {
+    float: none; }
+    .nav-wrap .sixteen .main-navigation a {
+      padding: 22px 20px; }
+    .nav-wrap .sixteen .main-navigation li:first-child a {
+      padding-left: 0px; }
+    .nav-wrap .sixteen .main-navigation ul ul li:first-child a {
+      padding-left: 20px; }
+    .nav-wrap .sixteen .main-navigation ul ul a {
+      padding: 10px 20px; }
+    .nav-wrap .sixteen .main-navigation ul ul li:hover ul {
+      left: 100%; }
+
 /*--------------------------------------------------------------
 6.0 Media
 --------------------------------------------------------------*/
@@ -1322,7 +1344,7 @@ object {
 .branding .site-branding {
   text-align: left;
   position: relative;
-  margin-top: 15px; }
+  padding: 10px 0px; }
   .branding .site-branding .site-description {
     font-size: 13px;
     font-size: 1.3rem;
@@ -1330,8 +1352,8 @@ object {
     font-family: "Open Sans", sans-serif;
     padding: 0px 10px 10px 0px;
     position: relative;
-    margin-bottom: 15px;
-    margin-top: -22px; }
+    margin-bottom: 0px;
+    margin-top: -20px; }
   .branding .site-branding .site-title {
     margin-bottom: 0;
     color: #fff; }
@@ -1355,6 +1377,13 @@ object {
   float: none;
   margin: 0 auto;
   display: block; }
+
+.header-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  position: relative; }
 
 .top-nav {
   margin-bottom: 0px;
@@ -1461,7 +1490,6 @@ object {
       top: 0;
       margin-top: 35px;
       color: #fff;
-      -webkit-transition: width 400ms ease, background 400ms ease;
       transition: width 400ms ease, background 400ms ease; }
     .top-nav .widget_search .search-form .search-field:focus ~ .search-submit-wrapper:before {
       opacity: 1; }
@@ -1502,6 +1530,12 @@ object {
           background-color: none; }
     .top-nav .widget_search .search-form input[type="search"] {
       -webkit-appearance: textfield; }
+
+.top-nav.style2 {
+  background: #cc8800;
+  color: #fff; }
+  .top-nav.style2 a {
+    color: #fff; }
 
 /* Breadcrumb */
 .breadcrumb {
@@ -2102,7 +2136,6 @@ blockquote {
   .post-wrapper .latest-posts .one-third:nth-child(3n+1) {
     clear: both; }
   .post-wrapper .latest-posts .latest-post {
-    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     overflow: hidden;
     position: relative;
@@ -2354,7 +2387,6 @@ blockquote {
 .woocommerce table.cart input,
 .woocommerce-page #content table.cart input,
 .woocommerce-page table.cart input {
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
 .woocommerce #content input.button,
@@ -2397,9 +2429,7 @@ blockquote {
   background: #272727 !important;
   /* Old browsers */
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #272727), color-stop(100%, #45484d)) !important;
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #272727 0%, #45484d 100%) !important;
   /* Chrome10+,Safari5.1+ */
   /* Opera 11.10+ */
   /* IE10+ */
@@ -2423,9 +2453,7 @@ blockquote {
   background: #666 !important;
   /* Old browsers */
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #45484d), color-stop(100%, #45484d)) !important;
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #666 0%, #45484d 100%) !important;
   /* Chrome10+,Safari5.1+ */
   /* Opera 11.10+ */
   /* IE10+ */
@@ -2433,12 +2461,6 @@ blockquote {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666', endColorstr='#45484d',GradientType=0 ) !important;
   /* IE6-9 */ }
-
-.woocommerce .woocommerce-info:before,
-.woocommerce-page .woocommerce-info:before,
-.woocommerce .woocommerce-message:before,
-.woocommerce-page .woocommerce-message:before {
-  background-color: #333; }
 
 .woocommerce .woocommerce-info,
 .woocommerce-page .woocommerce-info,
@@ -2455,9 +2477,7 @@ blockquote {
   background: #f2f9fe;
   /* Old browsers */
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f9fe), color-stop(100%, #d6f0fd));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%);
   /* Chrome10+,Safari5.1+ */
   /* Opera 11.10+ */
   /* IE10+ */
@@ -2495,9 +2515,7 @@ blockquote {
   background: #f2f9fe;
   /* Old browsers */
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f9fe), color-stop(100%, #d6f0fd));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%);
   /* Chrome10+,Safari5.1+ */
   /* Opera 11.10+ */
   /* IE10+ */
@@ -2522,7 +2540,7 @@ blockquote {
 .woocommerce div.product .woocommerce-tabs .panel,
 .woocommerce-page #content div.product .woocommerce-tabs .panel,
 .woocommerce-page div.product .woocommerce-tabs .panel {
-  background-color: #d2d2d2; }
+  background-color: #ebebeb; }
 
 .woocommerce #content div.product .woocommerce-tabs ul.tabs li a:hover,
 .woocommerce div.product .woocommerce-tabs ul.tabs li a:hover,
@@ -2539,9 +2557,7 @@ blockquote {
   background: #fceabb;
   /* Old browsers */
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fceabb), color-stop(50%, #fccd4d), color-stop(51%, #f8b500), color-stop(100%, #fbdf93));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
   /* Chrome10+,Safari5.1+ */
   /* Opera 11.10+ */
   /* IE10+ */
@@ -2614,7 +2630,11 @@ blockquote {
   padding-top: 0;
   height: 2.5em;
   line-height: 2.5;
-  width: 2em; }
+  width: 2em;
+  text-align: center;
+  color: #cc8800 !important;
+  top: 10px;
+  left: 1em; }
 
 .woocommerce form .form-row input.input-text,
 .woocommerce form .form-row textarea,
@@ -2637,7 +2657,7 @@ blockquote {
 
 .woocommerce .woocommerce-breadcrumb a:hover,
 .woocommerce-page .woocommerce-breadcrumb a:hover {
-  color: #cc8800; }
+  color: #1a1d25; }
 
 .woocommerce #content div.product .woocommerce-tabs ul.tabs li a,
 .woocommerce div.product .woocommerce-tabs ul.tabs li a,
@@ -2842,19 +2862,21 @@ blockquote {
   padding: 7px 10px;
   border: 0; }
 
-.woocommerce-page .site-footer,
-.woocommerce-page .footer-bottom,
-.woocommerce-page .woocommerce-breadcrumb {
-  padding: 0 50%;
-  box-sizing: content-box;
-  margin: 0 -50%; }
-
 .woocommerce a.remove {
   background: #cc8800;
   color: #fff !important; }
 
+.woocommerce-breadcrumb-class .woocommerce-breadcrumb {
+  color: #fff; }
+
+.woocommerce-breadcrumb-class h4 {
+  font-size: 3.6rem;
+  line-height: 3.5rem;
+  color: #fff;
+  margin-bottom: 0px; }
+
 .woocommerce #primary {
-  margin: 50px 0px; }
+  margin-bottom: 50px; }
 
 /*--------------------------------------------------------------
 10.0 Secondary
@@ -2907,7 +2929,6 @@ blockquote {
   list-style: none;
   background: url("images/sidebar-icon.png") no-repeat left 18px;
   padding-left: 15px;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   color: #7b7b7b; }
   .widget-area ul li li {
@@ -3148,7 +3169,6 @@ blockquote {
     .site-footer .footer-widgets ul li {
       padding-bottom: 5px;
       padding-top: 5px;
-      -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease; }
     .site-footer .footer-widgets select {
       width: 100%;
