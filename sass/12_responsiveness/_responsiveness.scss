@@ -22,17 +22,7 @@
  .main-navigation ul ul li:hover > ul {
     left: 100%;
   }
-    
-  .top-nav {
-    .container .eight.columns {
-      width: 100%;
-      text-align: center;
-      li {
-        display: inline-block;
-        float: none;
-      }
-    }
-  } 
+
   .comment-form input[type=text],
   .comment-form input[type=email],
   .comment-form input[type=text] {
@@ -82,6 +72,9 @@
         margin-right: 10px;
       }
     }
+  } 
+  .site-footer .footer-widgets aside {
+    margin: 0 0 3.5em 0;
   }
  
   .widget_calendar table th, .widget_calendar table td {
@@ -136,7 +129,16 @@
       padding-bottom: 10px!important;
     }
   }
- 
+  .top-nav {
+    .container .eight.columns {
+      width: 100%;
+      text-align: center;
+      li {
+        display: inline-block;
+        float: none;
+      }
+    }
+  } 
   #secondary {
     left:0!important;
   }
@@ -171,7 +173,8 @@
     margin:0px;
     margin-bottom: 10px;
   }
-
+      
+  
   .post-navigation .nav-links a,
   .comment-navigation .nav-previous a,
   .comment-navigation .nav-next a {
@@ -197,7 +200,7 @@
       padding-top:0;
     }   
   }
-
+  
   .flex-recent-posts li {
     width: 100%;
     img {

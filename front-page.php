@@ -37,9 +37,13 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 								    	<?php 
 								    	$content = get_the_content();
 								    	if( !empty( $content ) ) { ?>
-								    	<div class="flex-caption"> 
-								    		<?php the_content(); ?>
-								    	</div>
+								    		<div class="flex-caption">
+									    		<?php the_content( __('Read More','equity') ); 
+										    	wp_link_pages( array(
+													'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'equity' ),
+													'after'  => '</div>',
+												) ); ?>
+								    		</div>
 								    	<?php } ?>
 								    </li>
 							    <?php endif;?>			   
@@ -138,6 +142,10 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 					<main id="main" class="site-main" role="main"><?php
 						while ( have_posts() ) : the_post();       
 							the_content();
+						wp_link_pages( array(
+							'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'equity' ),
+							'after'  => '</div>',
+						) );
 						endwhile; ?>
 				    </main><!-- #main -->
 			    </div><!-- #primary -->  

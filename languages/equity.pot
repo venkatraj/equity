@@ -69,14 +69,30 @@ msgid "Website"
 msgstr ""
 
 #: footer.php:29
-msgid "<p>Powered by <a href=\"%1$s\" target=\"_blank\">WordPress</a>"
+msgid "Powered by"
 msgstr ""
 
-#: footer.php:31
-msgid "Theme: Equity by <a href=\"%1$s\" target=\"_blank\" rel=\"designer\">Webulous Themes</a></p>"
+#: footer.php:29
+msgid "WordPress."
 msgstr ""
 
-#: front-page.php:130
+#: footer.php:29
+msgid "Theme: Equity by"
+msgstr ""
+
+#: footer.php:29
+msgid "Webulous Themes"
+msgstr ""
+
+#: front-page.php:41, includes/template-tags.php:458, template-parts/content.php:40
+msgid "Read More"
+msgstr ""
+
+#: front-page.php:43, front-page.php:146, template-parts/content-single.php:38, template-parts/content.php:48
+msgid "Pages: "
+msgstr ""
+
+#: front-page.php:134
 msgid "Request a Call Back "
 msgstr ""
 
@@ -168,7 +184,11 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: single.php:35
+#: single.php:29
+msgid "Share this on ..."
+msgstr ""
+
+#: single.php:77
 msgid "About Author:"
 msgstr ""
 
@@ -1047,56 +1067,72 @@ msgstr ""
 msgid "Choose the featured image display type for Blog Page "
 msgstr ""
 
-#: includes/options-config.php:551, includes/options-config.php:567
+#: includes/options-config.php:551, includes/options-config.php:573
 msgid "Large Featured Image"
 msgstr ""
 
-#: includes/options-config.php:552, includes/options-config.php:568
+#: includes/options-config.php:552, includes/options-config.php:574
 msgid "Small Featured Image"
 msgstr ""
 
-#: includes/options-config.php:559
-msgid "Enable Single Post Featured Image"
+#: includes/options-config.php:560
+msgid "Single Blog"
+msgstr ""
+
+#: includes/options-config.php:561
+msgid "Single Blog page Related Posts options"
 msgstr ""
 
 #: includes/options-config.php:565
+msgid "Enable Single Post Featured Image"
+msgstr ""
+
+#: includes/options-config.php:571
 msgid "Choose the featured image display type for Single Page "
 msgstr ""
 
-#: includes/options-config.php:575
-msgid " Enable Author Bio Box below single post"
+#: includes/options-config.php:581
+msgid " Enable Social Sharing Box below single post"
 msgstr ""
 
-#: includes/options-config.php:576
-msgid "Show Author information box below single post."
+#: includes/options-config.php:587
+msgid " Enable Facebook Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:582
-msgid "Show Related posts"
-msgstr ""
-
-#: includes/options-config.php:583
-msgid "Show related posts."
-msgstr ""
-
-#: includes/options-config.php:589
-msgid "Related Posts Must Be Shown As:"
-msgstr ""
-
-#: includes/options-config.php:591
-msgid "Related Posts By Tags"
-msgstr ""
-
-#: includes/options-config.php:592
-msgid "Related Posts By Categories"
+#: includes/options-config.php:593
+msgid " Enable Twitter Sharing option below single post"
 msgstr ""
 
 #: includes/options-config.php:599
-msgid " Show Comments"
+msgid " Enable Linkedin Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:600
-msgid "Show Comments"
+#: includes/options-config.php:605
+msgid " Enable Google Plus Sharing option below single post"
+msgstr ""
+
+#: includes/options-config.php:611
+msgid " Enable Email Sharing option below single post"
+msgstr ""
+
+#: includes/options-config.php:617
+msgid " Enable Author Bio Box below single post"
+msgstr ""
+
+#: includes/options-config.php:623
+msgid "Show Related posts"
+msgstr ""
+
+#: includes/options-config.php:629
+msgid "Related Posts Must Be Shown As:"
+msgstr ""
+
+#: includes/options-config.php:631
+msgid "Related Posts By Tags"
+msgstr ""
+
+#: includes/options-config.php:632
+msgid "Related Posts By Categories"
 msgstr ""
 
 #: includes/template-tags.php:25
@@ -1212,10 +1248,6 @@ msgstr ""
 msgid "No Related Posts Yet!"
 msgstr ""
 
-#: includes/template-tags.php:458, template-parts/content.php:40
-msgid "Read More"
-msgstr ""
-
 #: includes/template-tags.php:469
 msgctxt "label"
 msgid "Search for:"
@@ -1257,8 +1289,4 @@ msgstr ""
 
 #: template-parts/content-page.php:23
 msgid "Pages:"
-msgstr ""
-
-#: template-parts/content-single.php:38, template-parts/content.php:48
-msgid "Pages: "
 msgstr ""

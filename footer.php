@@ -26,9 +26,7 @@
 				<?php if( get_theme_mod('copyright') ) : ?>
 							<p><?php echo equity_footer_copyright(get_theme_mod('copyright')); ?></p>
 						<?php else : 
-								printf( __('<p>Powered by <a href="%1$s" target="_blank">WordPress</a>', 'equity'), esc_url( 'http://wordpress.org/') );
-								printf( '<span class="sep"> .</span>' );
-								printf( __( 'Theme: Equity by <a href="%1$s" target="_blank" rel="designer">Webulous Themes</a></p>', 'equity' ), esc_url('http://www.webulousthemes.com/') );
+								echo sprintf( '<p> %1$s <a href="%2$s" target="_blank"> %3$s</a> %4$s <a href="%5$s" target="_blank" rel="designer">%6$s</a></p>', __('Powered by','equity'), esc_url( 'http://wordpress.org/'), __('WordPress.','equity'), __('Theme: Equity by','equity'), esc_url('https://www.webulousthemes.com/'), __('Webulous Themes','equity')) ;
 					 endif;  ?>
 				</div>
 				<div class="left-sidebar eight columns">
