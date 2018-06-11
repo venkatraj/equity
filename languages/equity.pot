@@ -964,174 +964,178 @@ msgid "Footer Widget Area"
 msgstr ""
 
 #: includes/options-config.php:436
+msgid "Enable Scroll To Top"
+msgstr ""
+
+#: includes/options-config.php:442
 msgid "Footer Copyright Text (Validated that it's HTML Allowed)"
 msgstr ""
 
-#: includes/options-config.php:437
+#: includes/options-config.php:443
 msgid "HTML Allowed. <b>This field is even HTML validated! </b>"
 msgstr ""
 
-#: includes/options-config.php:443
+#: includes/options-config.php:449
 msgid "Home"
 msgstr ""
 
-#: includes/options-config.php:444
+#: includes/options-config.php:450
 msgid "Home Page options"
 msgstr ""
 
-#: includes/options-config.php:448
+#: includes/options-config.php:454
 msgid "Enable Home Page Slider Section"
 msgstr ""
 
-#: includes/options-config.php:454
+#: includes/options-config.php:460
 msgid "Slider Posts Category"
 msgstr ""
 
-#: includes/options-config.php:459
+#: includes/options-config.php:465
 msgid "No. of Sliders"
 msgstr ""
 
-#: includes/options-config.php:465
+#: includes/options-config.php:471
 msgid "Enable Home Page Service Section"
 msgstr ""
 
-#: includes/options-config.php:471
+#: includes/options-config.php:477
 msgid "Choose Service Section Icons #1"
 msgstr ""
 
-#: includes/options-config.php:476
+#: includes/options-config.php:482
 msgid "Service Section #1"
 msgstr ""
 
-#: includes/options-config.php:481
+#: includes/options-config.php:487
 msgid "Choose Service Section Icons #2"
 msgstr ""
 
-#: includes/options-config.php:486
+#: includes/options-config.php:492
 msgid "Service Section #2"
 msgstr ""
 
-#: includes/options-config.php:491
+#: includes/options-config.php:497
 msgid "Choose Service Section Icons #3"
 msgstr ""
 
-#: includes/options-config.php:496
+#: includes/options-config.php:502
 msgid "Service Section #3"
 msgstr ""
 
-#: includes/options-config.php:501
+#: includes/options-config.php:507
 msgid "Enable Request a Call Back Form"
 msgstr ""
 
-#: includes/options-config.php:507
+#: includes/options-config.php:513
 msgid "Request a Call Back Form"
 msgstr ""
 
-#: includes/options-config.php:508
+#: includes/options-config.php:514
 msgid "Copy and paste the shortcode of the form from the contact form 7."
 msgstr ""
 
-#: includes/options-config.php:513
+#: includes/options-config.php:519
 msgid "Enable Home Page Recent Post Section"
 msgstr ""
 
-#: includes/options-config.php:519
+#: includes/options-config.php:525
 msgid "No. of Recent Posts"
 msgstr ""
 
-#: includes/options-config.php:525
+#: includes/options-config.php:531
 msgid "Exclude the Posts from Home Page"
 msgstr ""
 
-#: includes/options-config.php:526
+#: includes/options-config.php:532
 msgid "Post IDs, separated by commas."
 msgstr ""
 
-#: includes/options-config.php:531
+#: includes/options-config.php:537
 msgid "Enable Home Page Default Content"
 msgstr ""
 
-#: includes/options-config.php:538
+#: includes/options-config.php:544
 msgid "Blog"
 msgstr ""
 
-#: includes/options-config.php:539
+#: includes/options-config.php:545
 msgid "Blog Related Posts options"
 msgstr ""
 
-#: includes/options-config.php:543
+#: includes/options-config.php:549
 msgid "Enable Featured Image"
 msgstr ""
 
-#: includes/options-config.php:549
+#: includes/options-config.php:555
 msgid "Choose the featured image display type for Blog Page "
 msgstr ""
 
-#: includes/options-config.php:551, includes/options-config.php:573
+#: includes/options-config.php:557, includes/options-config.php:579
 msgid "Large Featured Image"
 msgstr ""
 
-#: includes/options-config.php:552, includes/options-config.php:574
+#: includes/options-config.php:558, includes/options-config.php:580
 msgid "Small Featured Image"
 msgstr ""
 
-#: includes/options-config.php:560
+#: includes/options-config.php:566
 msgid "Single Blog"
 msgstr ""
 
-#: includes/options-config.php:561
+#: includes/options-config.php:567
 msgid "Single Blog page Related Posts options"
 msgstr ""
 
-#: includes/options-config.php:565
+#: includes/options-config.php:571
 msgid "Enable Single Post Featured Image"
 msgstr ""
 
-#: includes/options-config.php:571
+#: includes/options-config.php:577
 msgid "Choose the featured image display type for Single Page "
 msgstr ""
 
-#: includes/options-config.php:581
+#: includes/options-config.php:587
 msgid " Enable Social Sharing Box below single post"
 msgstr ""
 
-#: includes/options-config.php:587
+#: includes/options-config.php:593
 msgid " Enable Facebook Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:593
+#: includes/options-config.php:599
 msgid " Enable Twitter Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:599
+#: includes/options-config.php:605
 msgid " Enable Linkedin Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:605
+#: includes/options-config.php:611
 msgid " Enable Google Plus Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:611
+#: includes/options-config.php:617
 msgid " Enable Email Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:617
+#: includes/options-config.php:623
 msgid " Enable Author Bio Box below single post"
 msgstr ""
 
-#: includes/options-config.php:623
+#: includes/options-config.php:629
 msgid "Show Related posts"
 msgstr ""
 
-#: includes/options-config.php:629
+#: includes/options-config.php:635
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: includes/options-config.php:631
+#: includes/options-config.php:637
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: includes/options-config.php:632
+#: includes/options-config.php:638
 msgid "Related Posts By Categories"
 msgstr ""
 

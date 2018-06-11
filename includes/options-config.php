@@ -267,7 +267,7 @@ function equity_display_upgrade() {
 		                    </tr>
 		                    <tr>
 		                         <td><h3><?php _e('Social Links', 'equity'); ?></h3></td>
-		                         <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                    <tr>
@@ -429,6 +429,12 @@ function equity_display_upgrade() {
 								'type' => 'checkbox',
 								'label' => __('Footer Widget Area', 'equity'),
 								'default' => 1,
+								'sanitize_callback' => 'equity_boolean',
+							),
+							'scroll_to_top' => array(
+								'type' => 'checkbox',
+								'label' => __('Enable Scroll To Top', 'equity'),
+								'default' => 0,
 								'sanitize_callback' => 'equity_boolean',
 							),
 							'copyright' => array(

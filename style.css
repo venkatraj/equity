@@ -4,11 +4,11 @@ Theme URI: https://www.webulousthemes.com/equity/
 Author: N. Venkat Raj
 Author URI: https://www.webulousthemes.com/                         
 Description: Equity Theme is a professional, sophisticated, elegant and robustly built WordPress theme for lawyers, Law Firm and Attorney website. The theme is very versatile and can also be easily used by various types of corporations, business and any kind of sites. core feature of WordPress  Has 4 Footer Widget Areas and lot more of customizer options.
-Version: 1.1.0    
+Version: 1.1.1    
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: equity  
-Tags: blog, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, translation-ready, theme-options
+Tags: blog, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, theme-options
             
 Equity WordPress Theme, Copyright (C) 2017, N. Venkat Raj
 Equity is distributed under the terms of the GNU GPL
@@ -3194,6 +3194,23 @@ blockquote {
       list-style: none; }
     .site-footer .footer-widgets .widget_rss ul li {
       background: none; }
+  .site-footer .scroll-to-top {
+    background: #cc8800;
+    color: #fff;
+    bottom: 3%;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    z-index: 999;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    border-radius: 4px;
+    transition: background-color 0.3s linear; }
+  .site-footer .scroll-to-top:hover {
+    background: rgba(204, 136, 0, 0.8); }
 
 .site-info {
   background: #1a1d25;

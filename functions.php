@@ -120,7 +120,7 @@ function equity_setup() {
 		        	'custom_html' , 
 		        	// Widget $instance -> settings 
 					array(
-					  'content'  => '<a href="#">Request a free consultation →</a>'
+					  'content'  => '<a href="#">Request a free consultation &rarr;</a>'
 					)
 				),
 				'search',
