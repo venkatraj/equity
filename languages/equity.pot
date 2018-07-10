@@ -88,11 +88,11 @@ msgstr ""
 msgid "Read More"
 msgstr ""
 
-#: front-page.php:43, front-page.php:146, template-parts/content-single.php:38, template-parts/content.php:48
+#: front-page.php:43, front-page.php:150, template-parts/content-single.php:38, template-parts/content.php:48
 msgid "Pages: "
 msgstr ""
 
-#: front-page.php:134
+#: front-page.php:138
 msgid "Request a Call Back "
 msgstr ""
 
@@ -178,6 +178,14 @@ msgstr ""
 
 #: header.php:23
 msgid "Skip to content"
+msgstr ""
+
+#: index.php:46, search.php:48
+msgid " &larr; Previous Post"
+msgstr ""
+
+#: index.php:47, search.php:49
+msgid "Next Post &rarr;"
 msgstr ""
 
 #: search.php:25
@@ -1024,118 +1032,130 @@ msgid "Service Section #3"
 msgstr ""
 
 #: includes/options-config.php:507
-msgid "Enable Request a Call Back Form"
-msgstr ""
-
-#: includes/options-config.php:513
-msgid "Request a Call Back Form"
-msgstr ""
-
-#: includes/options-config.php:514
-msgid "Copy and paste the shortcode of the form from the contact form 7."
-msgstr ""
-
-#: includes/options-config.php:519
 msgid "Enable Home Page Recent Post Section"
 msgstr ""
 
-#: includes/options-config.php:525
+#: includes/options-config.php:513
 msgid "No. of Recent Posts"
 msgstr ""
 
-#: includes/options-config.php:531
+#: includes/options-config.php:519
 msgid "Exclude the Posts from Home Page"
 msgstr ""
 
-#: includes/options-config.php:532
+#: includes/options-config.php:520
 msgid "Post IDs, separated by commas."
 msgstr ""
 
-#: includes/options-config.php:537
+#: includes/options-config.php:525
 msgid "Enable Home Page Default Content"
 msgstr ""
 
-#: includes/options-config.php:544
-msgid "Blog"
+#: includes/options-config.php:532
+msgid "Banner Form Section"
 msgstr ""
 
-#: includes/options-config.php:545
-msgid "Blog Related Posts options"
+#: includes/options-config.php:533
+msgid "Reaquest Call Back Form Related options"
+msgstr ""
+
+#: includes/options-config.php:537
+msgid "Enable Request a Call Back Form"
+msgstr ""
+
+#: includes/options-config.php:543
+msgid "Banner Title and Description"
+msgstr ""
+
+#: includes/options-config.php:548
+msgid "Request a Call Back Form"
 msgstr ""
 
 #: includes/options-config.php:549
-msgid "Enable Featured Image"
+msgid "Copy and paste the shortcode of the form from the WPForms Lite."
 msgstr ""
 
 #: includes/options-config.php:555
-msgid "Choose the featured image display type for Blog Page "
+msgid "Blog"
 msgstr ""
 
-#: includes/options-config.php:557, includes/options-config.php:579
-msgid "Large Featured Image"
+#: includes/options-config.php:556
+msgid "Blog Related Posts options"
 msgstr ""
 
-#: includes/options-config.php:558, includes/options-config.php:580
-msgid "Small Featured Image"
+#: includes/options-config.php:560
+msgid "Enable Featured Image"
 msgstr ""
 
 #: includes/options-config.php:566
-msgid "Single Blog"
+msgid "Choose the featured image display type for Blog Page "
 msgstr ""
 
-#: includes/options-config.php:567
-msgid "Single Blog page Related Posts options"
+#: includes/options-config.php:568, includes/options-config.php:590
+msgid "Large Featured Image"
 msgstr ""
 
-#: includes/options-config.php:571
-msgid "Enable Single Post Featured Image"
+#: includes/options-config.php:569, includes/options-config.php:591
+msgid "Small Featured Image"
 msgstr ""
 
 #: includes/options-config.php:577
+msgid "Single Blog"
+msgstr ""
+
+#: includes/options-config.php:578
+msgid "Single Blog page Related Posts options"
+msgstr ""
+
+#: includes/options-config.php:582
+msgid "Enable Single Post Featured Image"
+msgstr ""
+
+#: includes/options-config.php:588
 msgid "Choose the featured image display type for Single Page "
 msgstr ""
 
-#: includes/options-config.php:587
+#: includes/options-config.php:598
 msgid " Enable Social Sharing Box below single post"
 msgstr ""
 
-#: includes/options-config.php:593
+#: includes/options-config.php:604
 msgid " Enable Facebook Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:599
+#: includes/options-config.php:610
 msgid " Enable Twitter Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:605
+#: includes/options-config.php:616
 msgid " Enable Linkedin Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:611
+#: includes/options-config.php:622
 msgid " Enable Google Plus Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:617
+#: includes/options-config.php:628
 msgid " Enable Email Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:623
+#: includes/options-config.php:634
 msgid " Enable Author Bio Box below single post"
 msgstr ""
 
-#: includes/options-config.php:629
+#: includes/options-config.php:640
 msgid "Show Related posts"
 msgstr ""
 
-#: includes/options-config.php:635
+#: includes/options-config.php:646
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: includes/options-config.php:637
+#: includes/options-config.php:648
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: includes/options-config.php:638
+#: includes/options-config.php:649
 msgid "Related Posts By Categories"
 msgstr ""
 

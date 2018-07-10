@@ -502,18 +502,6 @@ function equity_display_upgrade() {
 								'label' => __('Service Section #3', 'equity'),
 								'sanitize_callback' => 'absint',
 							), 
-							'enable_banner_form_section' => array(
-                                'type' => 'checkbox',
-                                'label' => __('Enable Request a Call Back Form', 'equity'),
-                                'default' => 0,  
-                                'sanitize_callback' => 'equity_boolean',
-                            ),
-							'banner_form' => array(
-                                'type' => 'text',
-                                'label' => __('Request a Call Back Form', 'equity'),
-                                'description' => __( 'Copy and paste the shortcode of the form from the contact form 7.', 'equity' ),
-                                'sanitize_callback' => 'wp_kses_post',   
-                            ),  
 							'enable_recent_post_service' => array(
                                 'type' => 'checkbox',
                                 'label' => __('Enable Home Page Recent Post Section', 'equity'),
@@ -538,6 +526,29 @@ function equity_display_upgrade() {
                                 'default' => 0,  
                                 'sanitize_callback' => 'equity_boolean',
                             ),
+						),
+					),
+					'banner_form_section' => array(
+						'title' => __('Banner Form Section', 'equity'),
+						'description' => __('Reaquest Call Back Form Related options', 'equity'),
+						'fields' => array(
+							'enable_banner_form_section' => array(
+                                'type' => 'checkbox',
+                                'label' => __('Enable Request a Call Back Form', 'equity'),
+                                'default' => 0,  
+                                'sanitize_callback' => 'equity_boolean',
+							),
+							'banner_title' => array(
+								'type' => 'dropdown-pages',
+								'label' => __('Banner Title and Description', 'equity'),
+								'sanitize_callback' => 'absint',
+							),
+							'banner_form' => array(
+                                'type' => 'text',
+                                'label' => __('Request a Call Back Form', 'equity'),
+                                'description' => __( 'Copy and paste the shortcode of the form from the WPForms Lite.', 'equity' ),
+                                'sanitize_callback' => 'wp_kses_post',   
+                            ),  
 						),
 					),
 					'blog' => array(
@@ -647,7 +658,7 @@ function equity_display_upgrade() {
 			),
 		) 
 	)
-	);
+);
 
 function equity_boolean($value) {
 	if(is_bool($value)) {
@@ -671,19 +682,19 @@ if ( ! function_exists( 'equity_footer_copyright' ) ) {
 
     function equity_footer_copyright($string) {
         $allowed_tags = array(    
-                            'a' => array(
-                            	'href' => array(),
-								'title' => array(),
-								'target' => array(),
-                            ),
-							'img' => array(
-								'src' => array(),  
-								'alt' => array(),
-							),
-							'p' => array(),
-							'br' => array(),
-							'em' => array(),
-                            'strong' => array(),
+			'a' => array(
+				'href' => array(),
+				'title' => array(),
+				'target' => array(),
+			),
+			'img' => array(
+				'src' => array(),  
+				'alt' => array(),
+			),
+			'p' => array(),
+			'br' => array(),
+			'em' => array(),
+			'strong' => array(),
         );
         return wp_kses( $string,$allowed_tags);
 

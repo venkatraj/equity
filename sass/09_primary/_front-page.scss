@@ -306,22 +306,29 @@
      color: $white;
      width: 220px;
   }
+  .banner-form-class {
+    background-color: #fafbfb;
+    border: 1px solid $c1;
+    padding: 20px 20px 0px 20px;
+    @include font-size(1.4); 
+    .form-title {
+      margin-bottom:0.8em;
+    }
+  }
+  .wpcf7,.wpforms-container {
 
-  .wpcf7 {
-     background-color: #fafbfb;
-     border: 1px solid $c1;
-     padding: 20px 20px 0px 20px;
-     @include font-size(1.4);
-     float: rigth;
-
-     input[type="submit"],input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] {
+     button[type="submit"],input[type="submit"],input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] {
           width: 100%;
      }
      form p:last-of-type {
         margin-bottom: 0;
      }
   }
-
+  .wpforms-container {
+    input[type="text"] {
+      @include font-size(1.4);
+    }
+  }
   .pull_feedback {
       background: $primary;
       color: $white;

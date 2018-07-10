@@ -4,7 +4,7 @@ Theme URI: https://www.webulousthemes.com/equity/
 Author: N. Venkat Raj
 Author URI: https://www.webulousthemes.com/                         
 Description: Equity Theme is a professional, sophisticated, elegant and robustly built WordPress theme for lawyers, Law Firm and Attorney website. The theme is very versatile and can also be easily used by various types of corporations, business and any kind of sites. core feature of WordPress  Has 4 Footer Widget Areas and lot more of customizer options.
-Version: 1.1.1    
+Version: 1.1.2
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: equity  
@@ -649,7 +649,7 @@ select {
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"], #banner-form .wpforms-container button[type="submit"] {
   border: none;
   background: #cc8800;
   cursor: pointer;
@@ -665,7 +665,7 @@ input[type="submit"] {
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
-input[type="submit"]:hover {
+input[type="submit"]:hover, #banner-form .wpforms-container button[type="submit"]:hover {
   border-color: #1a1d25;
   background-color: #1a1d25;
   position: relative;
@@ -952,14 +952,14 @@ a {
 
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
-.post-navigation .nav-previous {
+.post-navigation .nav-previous, .posts-navigation .nav-previous {
   float: left;
   width: 48%;
   margin: 1%; }
 
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
-.post-navigation .nav-next {
+.post-navigation .nav-next, .posts-navigation .nav-next {
   float: right;
   text-align: right;
   width: 47%;
@@ -2204,17 +2204,21 @@ blockquote {
     background-color: #cc8800;
     color: #fff;
     width: 220px; }
-  #banner-form .wpcf7 {
+  #banner-form .banner-form-class {
     background-color: #fafbfb;
     border: 1px solid #d2d2d2;
     padding: 20px 20px 0px 20px;
     font-size: 14px;
-    font-size: 1.4rem;
-    float: rigth; }
-    #banner-form .wpcf7 input[type="submit"], #banner-form .wpcf7 input[type="text"], #banner-form .wpcf7 input[type="email"], #banner-form .wpcf7 input[type="url"], #banner-form .wpcf7 input[type="password"], #banner-form .wpcf7 input[type="search"] {
-      width: 100%; }
-    #banner-form .wpcf7 form p:last-of-type {
-      margin-bottom: 0; }
+    font-size: 1.4rem; }
+    #banner-form .banner-form-class .form-title {
+      margin-bottom: 0.8em; }
+  #banner-form .wpcf7 button[type="submit"], #banner-form .wpcf7 input[type="submit"], #banner-form .wpcf7 input[type="text"], #banner-form .wpcf7 input[type="email"], #banner-form .wpcf7 input[type="url"], #banner-form .wpcf7 input[type="password"], #banner-form .wpcf7 input[type="search"], #banner-form .wpforms-container button[type="submit"], #banner-form .wpforms-container input[type="submit"], #banner-form .wpforms-container input[type="text"], #banner-form .wpforms-container input[type="email"], #banner-form .wpforms-container input[type="url"], #banner-form .wpforms-container input[type="password"], #banner-form .wpforms-container input[type="search"] {
+    width: 100%; }
+  #banner-form .wpcf7 form p:last-of-type, #banner-form .wpforms-container form p:last-of-type {
+    margin-bottom: 0; }
+  #banner-form .wpforms-container input[type="text"] {
+    font-size: 14px;
+    font-size: 1.4rem; }
   #banner-form .pull_feedback {
     background: #cc8800;
     color: #fff;

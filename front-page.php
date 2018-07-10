@@ -128,11 +128,15 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 	    do_action('equity_recent_post_after');
     endif;
 
-    $banner_form = get_theme_mod('banner_form');
-    if( get_theme_mod('enable_banner_form_section',false) && $banner_form && class_exists( 'WPCF7' ) ) :
+	$banner_form = get_theme_mod('banner_form');
+	$enable_banner_form_section = get_theme_mod('enable_banner_form_section',true);
+	$banner_title = intval(get_theme_mod('banner_title'));
+	$description = get_post_field('post_content',absint($banner_title));
+	$title = get_the_title(absint($banner_title));
+	if ($enable_banner_form_section && ( $banner_title || ( $banner_form && class_exists( 'WPCF7' ) ) || ( $banner_form && class_exists('WPForms_Lite') ) ) ) :
 	   	do_action('equity_banner_form_before');
 	      $banner_form_heading = apply_filters('equity_banner_form_title',__('Request a Call Back ','equity') );
-		  echo '<div id="banner-form"><a href="#" class="pull_feedback" title="Request a Call Back">'. $banner_form_heading .'<i class="fa fa-long-arrow-up"></i></a>'. do_shortcode( wp_kses_post( $banner_form ) ).'</div>';  
+		  echo '<div id="banner-form"><a href="#" class="pull_feedback" title="Request a Call Back">'. $banner_form_heading .'<i class="fa fa-long-arrow-up"></i></a><div class="banner-form-class"><p>' . $description . '</p><p class="form-title"><strong> '.$title.'</strong></p>'. do_shortcode( wp_kses_post( $banner_form ) ).'</div></div>';  
 	    do_action('equity_banner_form_after');
     endif;
 

@@ -1,7 +1,7 @@
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {  
+input[type="submit"],#banner-form .wpforms-container button[type="submit"] {  
 	border: none;
 	background: $primary;
 	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
@@ -17,7 +17,7 @@ input[type="submit"] {
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
-input[type="submit"]:hover {
+input[type="submit"]:hover,#banner-form .wpforms-container button[type="submit"]:hover {
 	border-color: $secondary;
 	background-color: $secondary;
 	position: relative;

@@ -44,7 +44,10 @@ get_template_part( 'template-parts/breadcrumb' ); ?>
 					if(  get_theme_mod ('numeric_pagination',true) ) : 
 							the_posts_pagination();
 						else :
-							equity_post_nav();     
+							the_posts_navigation( array(
+							    'prev_text' => __(' &larr; Previous Post','equity'),
+							    'next_text' => __('Next Post &rarr;','equity'),
+							 ) );      
 						endif; 
 				?>
 
