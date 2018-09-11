@@ -15,7 +15,7 @@
 if ( is_singular() && pings_open() ) { ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>"><?php
 } ?>
-<?php wp_head(); ?>  
+<?php wp_head();?>  
 </head>
   
 <body <?php body_class(); ?>>  

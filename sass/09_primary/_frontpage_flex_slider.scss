@@ -30,7 +30,8 @@
       &:before {
         @include font-size(1.8);
         color: $white;
-        font-family: "FontAwesome";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
       }
       &:hover {   
         background-color: $primary;

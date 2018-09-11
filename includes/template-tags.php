@@ -377,7 +377,7 @@ endif;
 
 if ( ! function_exists( 'equity_edit' ) ) :
 	function equity_edit() {
-		edit_post_link( __( 'Edit', 'equity' ), '<span class="edit-link"><i class="fa fa-pencil"></i> ', '</span>' );
+		edit_post_link( __( 'Edit', 'equity' ), '<span class="edit-link"><i class="fas fa-pencil-alt"></i> ', '</span>' );
 	}
 endif;
 

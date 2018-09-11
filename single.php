@@ -31,21 +31,21 @@ get_header(); ?>
 						<?php if( get_theme_mod('facebook_sb') ): ?>
 						<li>
 							<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&amp;t=<?php the_title(); ?>">
-								<i class="fa fa-facebook"></i>
+								<i class="fab fa-facebook-f"></i>
 							</a>
 						</li>
 						<?php endif; ?>
 						<?php if( get_theme_mod('twitter_sb')): ?>
 						<li>
 							<a href="http://twitter.com/intent/tweet?url=<?php the_permalink(); ?>">
-								<i class="fa fa-twitter"></i>
+								<i class="fab fa-twitter"></i>
 							</a>
 						</li>
 						<?php endif; ?>
 						<?php if( get_theme_mod('linkedin_sb')): ?>
 						<li>
 							<a href="http://linkedin.com/shareArticle?mini=true&amp;url=<?php the_permalink(); ?>&amp;title=<?php the_title(); ?>">
-								<i class="fa fa-linkedin"></i>
+								<i class="fab fa-linkedin-in"></i>
 							</a>
 						</li>
 						<?php endif; ?>
@@ -53,7 +53,7 @@ get_header(); ?>
 						<?php if(get_theme_mod('google-plus_sb')): ?>
 						<li>
 							<a href="https://plus.google.com/share?url=<?php the_permalink(); ?>">
-								<i class="fa fa-google-plus"></i>
+								<i class="fab fa-google-plus-g"></i>
 							</a>
 						</li>
 						<?php endif; ?>

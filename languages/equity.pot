@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: 404.php:17
-msgid "Oops! That page can&rsquo;t be found."
+msgid "Oops! That page can't be found."
 msgstr ""
 
 #: 404.php:21
@@ -88,11 +88,11 @@ msgstr ""
 msgid "Read More"
 msgstr ""
 
-#: front-page.php:43, front-page.php:150, template-parts/content-single.php:38, template-parts/content.php:48
+#: front-page.php:43, front-page.php:153, template-parts/content-single.php:38, template-parts/content.php:48
 msgid "Pages: "
 msgstr ""
 
-#: front-page.php:138
+#: front-page.php:141
 msgid "Request a Call Back "
 msgstr ""
 
@@ -189,7 +189,7 @@ msgid "Next Post &rarr;"
 msgstr ""
 
 #: search.php:25
-msgid "Search Results for: %s"
+msgid "Search Results For"
 msgstr ""
 
 #: single.php:29
@@ -590,7 +590,7 @@ msgstr ""
 msgid "Pause background video"
 msgstr ""
 
-#: includes/enqueue.php:38
+#: includes/enqueue.php:39
 msgctxt "Font: on or off"
 msgid "on"
 msgstr ""
@@ -1300,7 +1300,11 @@ msgid "Nothing Found"
 msgstr ""
 
 #: template-parts/content-none.php:20
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid "Ready to publish your first post?"
+msgstr ""
+
+#: template-parts/content-none.php:20
+msgid "Get Started Here"
 msgstr ""
 
 #: template-parts/content-none.php:24
@@ -1308,7 +1312,7 @@ msgid "Sorry, but nothing matched your search terms. Please try again with some 
 msgstr ""
 
 #: template-parts/content-none.php:29
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgid "It seems we can't find what you're looking for. Perhaps searching can help."
 msgstr ""
 
 #: template-parts/content-page.php:23

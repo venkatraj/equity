@@ -6,7 +6,8 @@
 function equity_scripts() {      																																											    
 	wp_enqueue_style( 'equity-hind', equity_theme_font_url('Hind:300,400,500,600,700'), array(), 20141212 );
 	wp_enqueue_style( 'equity-open-sans', equity_theme_font_url('Open Sans:300,400,600,700,800'), array(), 20141212 );
-	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), 20150224 );
+	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/all.min.css', array(), 20150224 );
+	wp_enqueue_style( 'font-awesome-shims', get_template_directory_uri() . '/css/v4-shims.min.css', array(), 20150224 );
 	wp_enqueue_style( 'jquery-flexslider', get_template_directory_uri() . '/css/flexslider.css', array(), 20150224 );
 	wp_enqueue_style( 'equity-style', get_template_directory_uri() . '/style.css');
 
@@ -45,7 +46,7 @@ function equity_theme_font_url($font) {
 function equity_admin_enqueue_scripts( $hook ) {  
 		wp_enqueue_style( 
 			'font-awesome', 
-			get_template_directory_uri() . '/css/font-awesome.min.css', 
+			get_template_directory_uri() . '/css/all.css', 
 			array(), 
 			'4.3.0', 
 			'all' 

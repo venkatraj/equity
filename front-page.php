@@ -97,8 +97,11 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 						    	      endif; ?>
 
 							    <div class="service-section one-third column">
-							    	<?php if($icon_url): ?>
-					    	           <div class="service-image"><i class="fa <?php echo $icon_url; ?>"></i></div><?php 
+									<?php $icon_range = substr($icon_url,0,3);
+									if(($icon_url) && $icon_range != 'fa-') : ?>
+									   <div class="service-image"><i class="<?php echo $icon_url; ?>"></i></div><?php 
+									elseif(($icon_url) && $icon_range == 'fa-') : ?>
+										 <div class="service-image"><i class="fa <?php echo $icon_url; ?>"></i></div><?php 
 					    	        elseif( has_post_thumbnail() ) : ?>
 							    		 <div class="service-image"><a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php the_post_thumbnail('equity-service-img'); ?></a></div>
 							    	<?php endif; ?>
@@ -136,7 +139,7 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 	if ($enable_banner_form_section && ( $banner_title || ( $banner_form && class_exists( 'WPCF7' ) ) || ( $banner_form && class_exists('WPForms_Lite') ) ) ) :
 	   	do_action('equity_banner_form_before');
 	      $banner_form_heading = apply_filters('equity_banner_form_title',__('Request a Call Back ','equity') );
-		  echo '<div id="banner-form"><a href="#" class="pull_feedback" title="Request a Call Back">'. $banner_form_heading .'<i class="fa fa-long-arrow-up"></i></a><div class="banner-form-class"><p>' . $description . '</p><p class="form-title"><strong> '.$title.'</strong></p>'. do_shortcode( wp_kses_post( $banner_form ) ).'</div></div>';  
+		  echo '<div id="banner-form"><a href="#" class="pull_feedback" title="Request a Call Back">'. $banner_form_heading .'<i class="fa fa-long-arrow-alt-up"></i></a><div class="banner-form-class"><p>' . $description . '</p><p class="form-title"><strong> '.$title.'</strong></p>'. do_shortcode( wp_kses_post( $banner_form ) ).'</div></div>';  
 	    do_action('equity_banner_form_after');
     endif;
 

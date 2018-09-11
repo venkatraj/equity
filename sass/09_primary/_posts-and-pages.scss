@@ -242,7 +242,8 @@ blockquote {
 		position: absolute;
 		content: "\f10d";
 		@include font-size(2.2);
-		font-family: 'FontAwesome';
+		font-family: "Font Awesome 5 Free";
+        font-weight: 900;
 		left: 20px;
 		top: 20px;
 		color: $c3;	
@@ -257,8 +258,7 @@ blockquote {
 	
 		cite {
 			font-style: normal;
-			text-transform: uppercase;
-			color: $white;
+			color: $secondary;
 		}
 		a, a:visited {
 			color: $white;
@@ -270,7 +270,12 @@ blockquote {
 		}
 	}
 }
-
+p {
+	cite {
+		font-style: normal;
+		color: $secondary;
+	}
+}
 .related-posts { 
 	padding: 20px 0px;
 	ul#equity-related-posts {
@@ -332,4 +337,86 @@ blockquote {
 			}
 		}
 	}
+}
+
+/* Gutenberg CSS style */
+
+
+#primary ul {
+	list-style-type: disc;
+}
+.wp-block-latest-posts.aligncenter {
+	margin-left:3em;
+}
+.wp-block-verse {
+	color: $c3;	
+}
+.wp-block-quote {
+	border-left: 4px solid black;
+	padding-left:5px;
+	margin-top: 0px;
+	padding-top: 0px; 
+	margin-bottom:20px;
+	&:before {
+		content:"";
+		border: 0px;
+	}
+	cite {
+		margin: 0px;
+		padding-left: 20px;
+	}
+}
+
+.wp-block-quote.is-large {
+	border: 0px;
+	color:$secondary;	
+	cite {
+		text-align: right;
+		display: block;
+		color: #333;
+		font-style: italic;
+		padding-right: 20px;
+	}
+}
+
+.wp-block-pullquote {
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
+	padding: 0px;
+	padding-bottom: 10px;
+	margin: 0 auto;	
+	border-left:none !important;
+	margin-bottom:20px;
+	&:before {
+		content:"";
+		border: 0px;
+	}
+}
+.wp-block-pullquote.alignleft {
+	margin-right: 25px;
+}
+.wp-block-pullquote.alignright {
+	margin-left: 25px;
+}
+
+.wp-block-button {
+	a {
+		&:hover {
+			padding: 11px 24px;
+			box-shadow: 3px 3px black;
+			-webkit-box-shadow: 3px 3px black;
+		}
+	}
+}
+
+.wp-block-cover-image {
+	display:flex;
+}
+
+.wp-block-audio {
+	text-align:center;
+}
+
+.wp-block-button.aligncenter {
+	margin-bottom:1.5em;
 }

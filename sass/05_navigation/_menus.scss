@@ -130,7 +130,8 @@
 		    &:after {
 				position:absolute;
 				content:'\f107';  
-				font-family:"FontAwesome";
+				font-family: "Font Awesome 5 Free";
+        		font-weight: 900;
 				@include font-size(1.4); 
 		    	top: calc(50% - 10px);
 				color: $white;
@@ -253,11 +254,11 @@
 		&:before {
 			position: absolute;
 			content:"\f053";
-			font-family: "FontAwesome";
+			font-family: "Font Awesome 5 Free";
+        	font-weight: 900;
 			@include font-size(1);
 			left:0;
 			top: 3px;
-			font-weight: 400;
 		}
 	}
 	.meta-next-post {
