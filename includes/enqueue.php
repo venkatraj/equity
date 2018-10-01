@@ -46,7 +46,7 @@ function equity_theme_font_url($font) {
 function equity_admin_enqueue_scripts( $hook ) {  
 		wp_enqueue_style( 
 			'font-awesome', 
-			get_template_directory_uri() . '/css/all.css', 
+			get_template_directory_uri() . '/css/all.min.css', 
 			array(), 
 			'4.3.0', 
 			'all' 

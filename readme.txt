@@ -3,7 +3,7 @@ Contributors: Webulous
 Tags: blog, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, theme-options
 Requires at least: 4.3
 Tested up to: 4.9.8
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
      
@@ -45,6 +45,9 @@ Enable/Disable featured images visibility.
 
 == Changelog ==
 
+= 1.1.4 = 
+* WPForms Lite plugin action removed.
+
 = 1.1.3 = 
 * Gutenberg unit test style added. 
 
@@ -82,8 +85,8 @@ Enable/Disable featured images visibility.
 
 == Upgrade Notice ==
 
-= 1.1.3 = 
-* Gutenberg unit test style added. 
+= 1.1.4 = 
+* WPForms Lite plugin action removed.
 
 
 Equity WordPress Theme bundles the following third-party resources:
